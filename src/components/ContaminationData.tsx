@@ -38,7 +38,7 @@ const ContaminationData = () => {
             </CardHeader>
             <CardContent className="space-y-4">
               <p className="text-muted-foreground">
-                Conventional agriculture has degraded soil, polluted ecosystems, and reduced arable land. Contaminants such as heavy metals, plasticizers, and PFAS have become ubiquitous in our farmland. But it doesn't have to be this way. Orpheus is leading the charge in cleaning up our farms so that all Americans can enjoy clean, healthy food. Not to mention, our bio-based remediation strategies sequester carbon and generate profitable industrial materials for farmers to sell, so it's a win all around. Let's end this victory for America.
+                Conventional agriculture has degraded soil, polluted ecosystems, and reduced arable land. Contaminants such as heavy metals, plasticizers, and PFAS have become ubiquitous in our farmland. But it doesn't have to be this way. Orpheus is leading the charge in cleaning up our farms so that all Americans can enjoy clean, healthy food. Not to mention, our bio-based remediation strategies sequester carbon and generate profitable industrial materials for farmers to sell, so it's a win all around.
               </p>
               
               <div className="pt-6">
