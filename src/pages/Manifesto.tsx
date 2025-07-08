@@ -3,24 +3,24 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
-import { Quote, Leaf, Globe, Users } from 'lucide-react';
+import { Camera, BrainCircuit, Zap } from 'lucide-react';
 
 const Manifesto = () => {
   const principles = [
     {
-      icon: Leaf,
-      title: "Soil First",
-      description: "Healthy soil is the foundation of a healthy planet. We believe in regenerative practices that restore the earth's natural fertility."
+      icon: Camera,
+      title: "Hyperspectral Sensors",
+      description: "Hyperspectral sensors can identify microbial discrepancies and detect unusual growth patterns often times before a seed germinates."
     },
     {
-      icon: Globe,
-      title: "Sustainable Innovation",
-      description: "Technology should serve nature, not exploit it. Our AI solutions work in harmony with natural systems."
+      icon: BrainCircuit,
+      title: "Artificial Intelligence",
+      description: "Orpheus’ Artificial Intelligence Platform is trained to monitor real time data and pinpoint anomalies in molecular activity early."
     },
     {
-      icon: Users,
-      title: "Farmer Empowerment",
-      description: "Farmers are the stewards of our land. We provide tools that make them more successful while healing the earth."
+      icon: Zap,
+      title: "Power",
+      description: " Farmers know when something’s off, Orpheus will make that intuition precise and create the new digital architecture that restores power to American farms."
     }
   ];
 
@@ -28,15 +28,15 @@ const Manifesto = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       
-      {/* Hero */}
-      <section className="pt-24 pb-12">
+      {/* Top Content */}
+      <section className="pt-24 pb-12 bg-gradient-to-br from-background to-card">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <Badge className="mb-4">Our Mission</Badge>
+          <Badge className="mb-4">About</Badge>
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Our <span className="text-primary">Manifesto</span>
+            The Agrarian Republic:<br></br><span className="text-primary">A Manifesto</span>
           </h1>
           <p className="text-xl text-muted-foreground">
-            We believe in a future where agriculture heals the planet while feeding the world.
+            Clean and regional food supplies, all American grown are no longer to be thought of as a luxury, but a basic foundation to national security.
           </p>
         </div>
       </section>
@@ -44,58 +44,72 @@ const Manifesto = () => {
       {/* Main Content */}
       <section className="py-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Quote */}
-          <Card className="bg-primary/10 border-primary/20 mb-12">
-            <CardContent className="p-8">
-              <Quote className="h-8 w-8 text-primary mb-4" />
-              <blockquote className="text-xl md:text-2xl font-medium text-foreground mb-4">
-                "The earth does not belong to us; we belong to the earth. All things are connected like the blood which unites one family."
-              </blockquote>
-              <cite className="text-muted-foreground">— Chief Seattle</cite>
-            </CardContent>
-          </Card>
-
-          {/* The Problem */}
+          {/* Out Agrarian Roots */}
           <div className="prose prose-invert max-w-none mb-12">
-            <h2 className="text-3xl font-bold mb-6">The Crisis We Face</h2>
+            <h2 className="text-3xl font-bold mb-6">Our Agrarian Roots</h2>
             <p className="text-lg text-muted-foreground mb-6">
-              For too long, industrial agriculture has treated soil as a commodity rather than a living ecosystem. 
-              The result? Widespread contamination, depleted nutrients, and a food system that's making us sick.
-            </p>
-            <p className="text-lg text-muted-foreground mb-6">
-              PFAS, heavy metals, and chemical residues have infiltrated our farmland. Carbon that should be 
-              sequestered in healthy soil is instead released into the atmosphere. Farmers struggle with 
-              declining yields while battling contamination they didn't create.
-            </p>
-            <p className="text-lg text-muted-foreground">
-              But this isn't just an environmental crisis—it's a crisis of health, economy, and sovereignty. 
-              When our soil is sick, everything suffers.
+              Our founders, farmers themselves, knew the preservation of civil liberties is predicated on private property and the strength of the rural economy that then naturally succeeds.
             </p>
           </div>
 
-          {/* Our Vision */}
+          {/* Privacy and Transparency */}
           <div className="prose prose-invert max-w-none mb-12">
-            <h2 className="text-3xl font-bold mb-6">Our Vision</h2>
+            <h2 className="text-3xl font-bold mb-6">Privacy and Transparency</h2>
             <p className="text-lg text-muted-foreground mb-6">
-              We envision a world where farming regenerates the earth instead of depleting it. Where AI and 
-              technology amplify nature's wisdom rather than replacing it. Where farmers are rewarded for 
-              being stewards of the land.
-            </p>
-            <p className="text-lg text-muted-foreground mb-6">
-              This isn't about going backward—it's about leaping forward. We combine cutting-edge artificial 
-              intelligence with time-tested regenerative practices to create solutions that are both 
-              scientifically rigorous and ecologically sound.
-            </p>
-            <p className="text-lg text-muted-foreground">
-              Clean food. Healthy soil. Profitable farms. Carbon sequestration. These aren't competing goals—
-              they're synergistic outcomes of a system that works with nature instead of against it.
+              Modern America has given corporations the right to privacy, before its citizens. 
+              Transparency of our supplies, including non-food ingredients and contaminants are a right to health and protection of the success of US supply chains.
             </p>
           </div>
 
-          {/* Principles */}
-          <div className="mb-12">
-            <h2 className="text-3xl font-bold mb-8 text-center">Our Principles</h2>
-            <div className="grid md:grid-cols-3 gap-8">
+          {/* The Costs of Global Outsourcing */}
+          <div className="prose prose-invert max-w-none mb-12">
+            <h2 className="text-3xl font-bold mb-6">The Costs of Global Outsourcing</h2>
+            <p className="text-lg text-muted-foreground mb-6">
+              Today the economy must return to its agrarian foundation. Free trade absolutists and cost-cutting corporations have outsourced our food supplies to India, Brazil, Mexico and China. 
+              This half century of self sabotage was not only at the expense of American farmers, but the health of every American. 
+            </p>
+            {/* Quote */}
+            <Card className="bg-primary/10 border-primary/20 mb-12">
+              <CardContent className="p-8">
+                <p className="text-4xl md:text-6xl font-bold text-center text-primary">$300 billion</p>
+                <p className="text-lg text-muted-foreground text-center">
+                  in yearly agricultural imports
+                </p>
+                <cite className="block text-muted-foreground text-right">— TODO: cite?</cite>
+              </CardContent>
+            </Card>
+            <p className="text-lg text-muted-foreground mb-6">
+              Farmers have no margin of safety and require break even insurance to survive. 
+              Meanwhile Americans are battling chronic illness at rates never seen before. 
+            </p>
+          </div>
+
+          {/* Agroterrorism and Chemical Infiltration */}
+          <div className="prose prose-invert max-w-none mb-12">
+            <h2 className="text-3xl font-bold mb-6">Agroterrorism and Chemical Infiltration</h2>
+            <p className="text-lg text-muted-foreground mb-6">
+              Foreign actors have inundated our supply chains with non-food ingredients, unnamed chemicals classified as proprietary and cheap packaging. 
+              Agroterrorism has emerged with attacks on American farmers. 
+              With mystery suppliers delivering unnamed seeds around America, likely laced with blight and toxic fungi. 
+            </p>
+            <p className="text-lg text-muted-foreground mb-6">
+              Well intending organizations within the US do not have the bandwidth to oversee global supply chains and prevent attacks, let alone verify quality and certify food grown abroad as organic. 
+            </p>
+            <p className="text-lg text-muted-foreground mb-6">
+              Recently, the HLB “citrus greening” bacteria destroyed most of the Florida orange industry. 
+              The US cannot remain dependent on foreign supply chains, seed suppliers and mono-cropping industrialists who have not defended American farmers in the past and do not have the foresight to do so in the future. 
+            </p>
+            <p className="text-lg text-muted-foreground mb-6">
+              American farmers are one season away from an act of agro-terrorism bacteria outbreak wiping out a crop cycle.  
+              Moreover, ag-tech and biotech companies are marketing proprietary synthetic fertilizer alternatives as the future of nitrogen and fungicide treatments. 
+              Farmers do not trust lab trials, and should have the technological framework to run their own open source field trials. 
+            </p>
+          </div>
+
+          {/* Restoring Power Through Technology */}
+          <div className="prose prose-invert max-w-none mb-12">
+            <h2 className="text-3xl font-bold mb-6 text-center">Restoring Power Through Technology</h2>
+            <div className="grid md:grid-cols-3 gap-8 mb-6">
               {principles.map((principle, index) => (
                 <Card key={index} className="text-center">
                   <CardContent className="p-6">
@@ -108,27 +122,14 @@ const Manifesto = () => {
                 </Card>
               ))}
             </div>
+            <p className="text-lg text-muted-foreground mb-6 text-center">
+              At a time when rural America is attacked and ignored by lawmakers, banks and technology investors, Orpheus technologies is defending farmers, an early and imperfect attempt it may be, to give farmers end to end control over American supply chains.
+            </p>
+            <p className="text-lg font-semibold text-primary text-center">
+              This is a question of national will. America’s health and civil liberties depend upon it. 
+            </p>
           </div>
 
-          {/* The Path Forward */}
-          <div className="prose prose-invert max-w-none">
-            <h2 className="text-3xl font-bold mb-6">The Path Forward</h2>
-            <p className="text-lg text-muted-foreground mb-6">
-              The solution isn't to abandon technology—it's to use it wisely. Our AI doesn't replace the 
-              farmer's knowledge; it amplifies it. Our sensors don't control nature; they help us understand it.
-            </p>
-            <p className="text-lg text-muted-foreground mb-6">
-              We're building tools that help farmers see what's happening in their soil at the microscopic level, 
-              track carbon sequestration in real-time, and turn contaminated land into profitable, productive farms.
-            </p>
-            <p className="text-lg text-muted-foreground mb-6">
-              This is about more than farming—it's about reclaiming our food sovereignty, healing our planet, 
-              and building an economy that values life over extraction.
-            </p>
-            <p className="text-lg font-semibold text-primary">
-              The future of farming isn't just sustainable—it's regenerative. And it starts now.
-            </p>
-          </div>
         </div>
       </section>
 
