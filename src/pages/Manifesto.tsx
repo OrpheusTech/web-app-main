@@ -69,7 +69,7 @@ const Manifesto = () => {
               This half century of self sabotage was not only at the expense of American farmers, but the health of every American. 
             </p>
             {/* Quote */}
-            <Card className="bg-primary/10 border-primary/20 mb-12">
+            <Card className="bg-primary/10 border-primary/20 mb-6">
               <CardContent className="p-8">
                 <p className="text-4xl md:text-6xl font-bold text-center text-primary">$300 billion</p>
                 <p className="text-lg text-muted-foreground text-center">
@@ -108,24 +108,26 @@ const Manifesto = () => {
 
           {/* Restoring Power Through Technology */}
           <div className="prose prose-invert max-w-none mb-12">
-            <h2 className="text-3xl font-bold mb-6 text-center">Restoring Power Through Technology</h2>
+            <h2 className="text-3xl font-bold mb-6">Restoring Power Through Technology</h2>
             <div className="grid md:grid-cols-3 gap-8 mb-6">
               {principles.map((principle, index) => (
-                <Card key={index} className="text-center">
-                  <CardContent className="p-6">
-                    <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <principle.icon className="h-8 w-8 text-primary" />
+                <Card key={index} className="flex flex-col text-left">
+                  <CardContent className="flex flex-col flex-grow p-6">
+                    <div className="flex items-center gap-4">
+                      <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center shrink-0 justify-center mb-4">
+                        <principle.icon className="h-8 w-8 text-primary" />
+                      </div>
+                      <h3 className="text-xl font-semibold break-words mb-3">{principle.title}</h3>
                     </div>
-                    <h3 className="text-xl font-semibold mb-3">{principle.title}</h3>
-                    <p className="text-muted-foreground">{principle.description}</p>
+                    <p className="text-muted-foreground break-words">{principle.description}</p>
                   </CardContent>
                 </Card>
               ))}
             </div>
-            <p className="text-lg text-muted-foreground mb-6 text-center">
+            <p className="text-lg text-muted-foreground mb-6">
               At a time when rural America is attacked and ignored by lawmakers, banks and technology investors, Orpheus technologies is defending farmers, an early and imperfect attempt it may be, to give farmers end to end control over American supply chains.
             </p>
-            <p className="text-lg font-semibold text-primary text-center">
+            <p className="text-lg font-semibold text-primary">
               This is a question of national will. America’s health and civil liberties depend upon it. 
             </p>
           </div>

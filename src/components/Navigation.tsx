@@ -59,27 +59,30 @@ const Navigation = () => {
         </div>
 
         {/* Mobile Navigation */}
-        {isOpen && (
-          <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-card border border-border rounded-lg mt-2">
-              {navItems.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.path}
-                  className={`block px-3 py-2 text-base font-medium transition-colors hover:text-primary ${
-                    isActive(item.path) ? 'text-primary' : 'text-muted-foreground'
-                  }`}
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.name}
-                </Link>
-              ))}
-              <div className="px-3 py-2">
-                <Button className="w-full">Get Started</Button>
-              </div>
+        <div
+          className={`md:hidden transform transition-all duration-300 ease-in-out overflow-hidden ${
+            isOpen ? 'max-h-96 opacity-100 scale-y-100' : 'max-h-0 opacity-0 scale-y-95'
+          }`}
+        >
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-card border border-border rounded-lg mt-2">
+            {navItems.map((item) => (
+              <Link
+                key={item.name}
+                to={item.path}
+                className={`block px-3 py-2 text-base font-medium transition-colors hover:text-primary ${
+                  isActive(item.path) ? 'text-primary' : 'text-muted-foreground'
+                }`}
+                onClick={() => setIsOpen(false)}
+              >
+                {item.name}
+              </Link>
+            ))}
+            <div className="px-3 py-2">
+              <Button className="w-full">Get Started</Button>
             </div>
           </div>
-        )}
+
+        </div>
       </div>
     </nav>
   );
