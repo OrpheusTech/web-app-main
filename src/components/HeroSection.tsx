@@ -10,8 +10,15 @@ const phrases = [
 ];
 
 const HeroSection = () => {
+  /* Phrase Cycling State */
   const [activeIndex, setActiveIndex] = useState(0);
 
+  /* Scrolls from homepage landing section to target section */
+  const scrollToTarget = () => {
+    document.getElementById("scroll-target-section")?.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  /* Timer for phrase cycling */
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((prev) => (prev + 1) % phrases.length);
@@ -39,6 +46,7 @@ const HeroSection = () => {
             <span className="block text-primary">Farming</span>
           </h1>
           
+          {/* Phrase Cycling */}
           <div className="w-1/2 mx-auto mb-8 space-y-2 text-left whitespace-nowrap">
             {phrases.map((phrase, index) => (
               <p
@@ -55,14 +63,9 @@ const HeroSection = () => {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <Button size="lg" className="group">
+            <Button size="lg" className="group" onClick={scrollToTarget}>
               Get Started
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-            </Button>
-            <Button variant="outline" size="lg" className="group bg-background/10 backdrop-blur-sm">
-              <Play className="mr-2 h-4 w-4" />
-              Watch Demo
-              <span className="ml-2 text-xs text-muted-foreground">(animated video)</span>
             </Button>
           </div>
 
