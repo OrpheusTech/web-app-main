@@ -71,11 +71,11 @@ const Manifesto = () => {
             {/* Quote */}
             <Card className="bg-primary/10 border-primary/20 mb-6">
               <CardContent className="p-8">
-                <p className="text-4xl md:text-6xl font-bold text-center text-primary">$300 billion</p>
                 <p className="text-lg text-muted-foreground text-center">
-                  in yearly agricultural imports
+                  Yearly agricultural imports are approaching
                 </p>
-                <cite className="block text-muted-foreground text-right">— TODO: cite?</cite>
+                <p className="text-4xl md:text-6xl font-bold text-center text-primary animate-text bg-gradient-to-r from-primary via-white to-primary bg-[length:200%_100%] bg-clip-text text-transparent font-bold">$300 billion</p>
+                <cite className="block text-muted-foreground text-right">— USDA (TODO: cite?)</cite>
               </CardContent>
             </Card>
             <p className="text-lg text-muted-foreground mb-6">
@@ -127,7 +127,7 @@ const Manifesto = () => {
             <p className="text-lg text-muted-foreground mb-6">
               At a time when rural America is attacked and ignored by lawmakers, banks and technology investors, Orpheus technologies is defending farmers, an early and imperfect attempt it may be, to give farmers end to end control over American supply chains.
             </p>
-            <p className="text-lg font-semibold text-primary">
+            <p className="text-xl font-semibold text-primary">
               This is a question of national will. America’s health and civil liberties depend upon it. 
             </p>
           </div>
