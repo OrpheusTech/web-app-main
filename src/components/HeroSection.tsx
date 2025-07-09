@@ -53,7 +53,7 @@ const HeroSection = () => {
                 key={index}
                 className={`transition-all duration-500 ease-in-out text-xl md:text-2xl ${
                   index === activeIndex
-                    ? 'font-bold text-foreground'
+                    ? 'font-bold text-foreground tracking-wider'
                     : 'text-muted-foreground'
                 }`}
               >
