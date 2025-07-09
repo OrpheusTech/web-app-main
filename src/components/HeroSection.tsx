@@ -1,8 +1,24 @@
 
 import { Button } from '@/components/ui/button';
 import { Play, ArrowRight, Cpu, Leaf, TrendingUp } from 'lucide-react';
+import { useEffect, useState } from 'react';
+
+const phrases = [
+  "Radically Clean",
+  "Built for Farmers",
+  "Independently American"
+];
 
 const HeroSection = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prev) => (prev + 1) % phrases.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
@@ -23,10 +39,19 @@ const HeroSection = () => {
             <span className="block text-primary">Farming</span>
           </h1>
           
-          <div className="max-w-2xl mx-auto mb-8 space-y-2">
-            <p className="text-xl md:text-2xl text-muted-foreground">Radically Clean</p>
-            <p className="text-xl md:text-2xl text-muted-foreground">Independently American</p>
-            <p className="text-xl md:text-2xl text-muted-foreground">Built for Farmers</p>
+          <div className="w-1/2 mx-auto mb-8 space-y-2 text-left whitespace-nowrap">
+            {phrases.map((phrase, index) => (
+              <p
+                key={index}
+                className={`transition-all duration-500 ease-in-out text-xl md:text-2xl ${
+                  index === activeIndex
+                    ? 'font-bold text-foreground'
+                    : 'text-muted-foreground'
+                }`}
+              >
+                {phrase}
+              </p>
+            ))}
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
