@@ -43,7 +43,6 @@ const Navigation = () => {
                 {item.name}
               </Link>
             ))}
-            <Button className="ml-4">Get Started</Button>
           </div>
 
           {/* Mobile menu button */}
@@ -77,9 +76,6 @@ const Navigation = () => {
                 {item.name}
               </Link>
             ))}
-            <div className="px-3 py-2">
-              <Button className="w-full">Get Started</Button>
-            </div>
           </div>
 
         </div>
