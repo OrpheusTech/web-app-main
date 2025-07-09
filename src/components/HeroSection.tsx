@@ -47,7 +47,7 @@ const HeroSection = () => {
           </h1>
           
           {/* Phrase Cycling */}
-          <div className="w-1/2 mx-auto mb-8 space-y-2 text-left whitespace-nowrap">
+          <div className="mb-8 space-y-2 whitespace-nowrap">
             {phrases.map((phrase, index) => (
               <p
                 key={index}
