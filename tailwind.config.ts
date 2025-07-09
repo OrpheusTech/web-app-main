@@ -19,6 +19,9 @@ export default {
 			}
 		},
 		extend: {
+			backgroundSize: {
+				'200%': '200% 100%',
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -70,6 +73,10 @@ export default {
 				sm: 'calc(var(--radius) - 4px)'
 			},
 			keyframes: {
+				shimmer: {
+					'0%': { backgroundPosition: '-200% 0' },
+					'100%': { backgroundPosition: '200% 0' },
+				},
 				'accordion-down': {
 					from: {
 						height: '0'
@@ -105,7 +112,8 @@ export default {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'float': 'float 6s ease-in-out infinite',
-				'fade-in-up': 'fade-in-up 0.8s ease-out'
+				'fade-in-up': 'fade-in-up 0.8s ease-out',
+				text: 'shimmer 6s ease-in-out infinite',
 			}
 		}
 	},
