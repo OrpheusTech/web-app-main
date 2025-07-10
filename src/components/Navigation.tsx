@@ -60,7 +60,7 @@ const Navigation = () => {
   return (
     <nav className="fixed top-0 w-full z-50 bg-background/95 backdrop-blur-md border-b border-border/40 supports-[backdrop-filter]:bg-background/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20"> {/* Increased height from h-16 to h-20 */}
           {/* Logo Section */}
           <Link to="/" className="flex items-center space-x-3 group py-2">
             <div className="relative">
@@ -74,21 +74,24 @@ const Navigation = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-2">
+          <div className="hidden lg:flex items-center space-x-6"> {/* Increased spacing from space-x-2 to space-x-6 */}
             {navItems.map((item) => (
               <Link
                 key={item.name}
                 to={item.path}
                 className={cn(
-                  "relative px-4 py-2.5 text-sm font-medium transition-all duration-200 rounded-lg group",
+                  "relative px-5 py-3 text-sm font-medium transition-all duration-300 rounded-lg group",
                   "hover:bg-accent/80 hover:text-accent-foreground",
                   "focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2",
+                  "after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 after:-translate-x-1/2",
+                  "hover:after:w-3/4",
                   isActive(item.path) 
-                    ? "text-primary bg-primary/15 shadow-sm border border-primary/30" 
+                    ? "text-primary bg-primary/10 shadow-sm border border-primary/20 after:w-3/4" 
                     : "text-muted-foreground hover:text-foreground"
-                )}                >
-                  <span className="relative z-10">{item.name}</span>
-                </Link>
+                )}
+              >
+                <span className="relative z-10">{item.name}</span>
+              </Link>
             ))}
           </div>
 
@@ -149,14 +152,14 @@ const Navigation = () => {
           </div>
 
           {/* Mobile Controls */}
-          <div className="lg:hidden flex items-center space-x-2">
+          <div className="lg:hidden flex items-center space-x-3"> {/* Increased spacing */}
             <ThemeToggle />
             
             {/* Mobile Profile */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="sm" className="h-9 w-9 p-0">
-                  <Avatar className="h-7 w-7">
+                <Button variant="ghost" size="sm" className="h-10 w-10 p-0"> {/* Increased touch target */}
+                  <Avatar className="h-8 w-8"> {/* Slightly larger avatar */}
                     <AvatarImage src={user.avatar} alt={user.name} />
                     <AvatarFallback className="bg-primary text-primary-foreground text-xs">
                       {user.initials}
@@ -193,30 +196,31 @@ const Navigation = () => {
               variant="ghost"
               size="sm"
               onClick={() => setIsOpen(!isOpen)}
-              className="h-9 w-9 p-0 hover:bg-accent/50 transition-colors"
+              className="h-10 w-10 p-0 hover:bg-accent/50 transition-colors"
               aria-label="Toggle navigation menu"
             >
-              {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
           </div>
         </div>
 
-        {/* Mobile Navigation */}
+        {/* Mobile Navigation - Enhanced */}
         <div
           className={cn(
             "lg:hidden transform transition-all duration-300 ease-in-out overflow-hidden",
             isOpen ? 'max-h-[500px] opacity-100 scale-y-100' : 'max-h-0 opacity-0 scale-y-95'
           )}
         >
-          <div className="px-3 pt-4 pb-4 space-y-2 bg-card/50 backdrop-blur-sm border border-border/50 rounded-lg mt-3 shadow-lg mx-2">
+          <div className="px-4 pt-6 pb-6 space-y-3 bg-card/50 backdrop-blur-sm border border-border/50 rounded-lg mt-4 shadow-lg mx-4">
             {navItems.map((item) => (
               <Link
                 key={item.name}
                 to={item.path}
                 className={cn(
-                  "flex items-center justify-between px-4 py-3 text-sm font-medium transition-all duration-200 rounded-lg group",
-                  "hover:bg-accent/80 hover:text-accent-foreground",
+                  "flex items-center justify-between px-5 py-4 text-base font-medium transition-all duration-200 rounded-lg group",
+                  "hover:bg-accent/80 hover:text-accent-foreground active:scale-95",
                   "focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2",
+                  "min-h-[48px]", // Ensuring good touch targets
                   isActive(item.path) 
                     ? "text-primary bg-primary/15 shadow-sm border border-primary/30" 
                     : "text-muted-foreground hover:text-foreground"
@@ -224,6 +228,9 @@ const Navigation = () => {
                 onClick={() => setIsOpen(false)}
               >
                 <span>{item.name}</span>
+                {isActive(item.path) && (
+                  <div className="w-2 h-2 bg-primary rounded-full"></div>
+                )}
               </Link>
             ))}
           </div>
