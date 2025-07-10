@@ -10,10 +10,12 @@ const Navigation = () => {
 
   const navItems = [
     { name: 'Home', path: '/' },
-    { name: 'Systems', path: '/systems' },
-    { name: 'Manifesto', path: '/manifesto' },
+    { name: 'Product', path: '/systems' },
+    { name: 'Dashboard', path: '/notfound' },
+    { name: 'About', path: '/manifesto' },
     { name: 'Our Team', path: '/team' },
-    { name: 'Contact', path: '/contact' }
+    { name: 'Blogs', path: '/notfound' },
+    { name: 'Careers', path: '/notfound' }
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -41,7 +43,6 @@ const Navigation = () => {
                 {item.name}
               </Link>
             ))}
-            <Button className="ml-4">Get Started</Button>
           </div>
 
           {/* Mobile menu button */}
@@ -57,27 +58,27 @@ const Navigation = () => {
         </div>
 
         {/* Mobile Navigation */}
-        {isOpen && (
-          <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-card border border-border rounded-lg mt-2">
-              {navItems.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.path}
-                  className={`block px-3 py-2 text-base font-medium transition-colors hover:text-primary ${
-                    isActive(item.path) ? 'text-primary' : 'text-muted-foreground'
-                  }`}
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.name}
-                </Link>
-              ))}
-              <div className="px-3 py-2">
-                <Button className="w-full">Get Started</Button>
-              </div>
-            </div>
+        <div
+          className={`md:hidden transform transition-all duration-300 ease-in-out overflow-hidden ${
+            isOpen ? 'max-h-96 opacity-100 scale-y-100' : 'max-h-0 opacity-0 scale-y-95'
+          }`}
+        >
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-card border border-border rounded-lg mt-2">
+            {navItems.map((item) => (
+              <Link
+                key={item.name}
+                to={item.path}
+                className={`block px-3 py-2 text-base font-medium transition-colors hover:text-primary ${
+                  isActive(item.path) ? 'text-primary' : 'text-muted-foreground'
+                }`}
+                onClick={() => setIsOpen(false)}
+              >
+                {item.name}
+              </Link>
+            ))}
           </div>
-        )}
+
+        </div>
       </div>
     </nav>
   );
