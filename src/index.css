@@ -397,3 +397,13 @@
   backface-visibility: hidden;
   transform-style: preserve-3d;
 }
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+.typing-text {
+  overflow: hidden;
+  white-space: nowrap;
+}

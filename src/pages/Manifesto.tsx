@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
 import { Camera, BrainCircuit, Zap } from 'lucide-react';
-import { FadeInFromLeft, FadeInSubtle, FadeInFromUpStagger } from '@/components/ui/fade-in';
+import { TypingIn, FadeInSubtle, FadeInFromUpStagger } from '@/components/ui/fade-in';
 
 const Manifesto = () => {
   const principles = [
@@ -47,9 +47,9 @@ const Manifesto = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Out Agrarian Roots */}
           <div className="prose prose-invert max-w-none mb-12">
-            <FadeInFromLeft>
+            <TypingIn>
               <h2 className="text-3xl font-bold mb-6">Our Agrarian Roots</h2>
-            </FadeInFromLeft>
+            </TypingIn>
             <FadeInSubtle>
               <p className="text-lg text-muted-foreground mb-6">
                 Our founders, farmers themselves, knew the preservation of civil liberties is predicated on private property and the strength of the rural economy that then naturally succeeds.
@@ -59,9 +59,9 @@ const Manifesto = () => {
 
           {/* Privacy and Transparency */}
           <div className="prose prose-invert max-w-none mb-12">
-            <FadeInFromLeft>
+            <TypingIn>
               <h2 className="text-3xl font-bold mb-6">Privacy and Transparency</h2>
-            </FadeInFromLeft>
+            </TypingIn>
             <FadeInSubtle>
               <p className="text-lg text-muted-foreground mb-6">
                 Modern America has given corporations the right to privacy, before its citizens. 
@@ -72,9 +72,9 @@ const Manifesto = () => {
 
           {/* The Costs of Global Outsourcing */}
           <div className="prose prose-invert max-w-none mb-12">
-            <FadeInFromLeft>
+            <TypingIn>
               <h2 className="text-3xl font-bold mb-6">The Costs of Global Outsourcing</h2>
-            </FadeInFromLeft>
+            </TypingIn>
             <FadeInSubtle>
               <p className="text-lg text-muted-foreground mb-6">
                 Today the economy must return to its agrarian foundation. Free trade absolutists and cost-cutting corporations have outsourced our food supplies to India, Brazil, Mexico and China. 
@@ -99,9 +99,9 @@ const Manifesto = () => {
 
           {/* Agroterrorism and Chemical Infiltration */}
           <div className="prose prose-invert max-w-none mb-12">
-            <FadeInFromLeft>
+            <TypingIn>
               <h2 className="text-3xl font-bold mb-6">Agroterrorism and Chemical Infiltration</h2>
-            </FadeInFromLeft>
+            </TypingIn>
             <FadeInSubtle>
               <p className="text-lg text-muted-foreground mb-6">
                 Foreign actors have inundated our supply chains with non-food ingredients, unnamed chemicals classified as proprietary and cheap packaging. 
@@ -125,9 +125,9 @@ const Manifesto = () => {
 
           {/* Restoring Power Through Technology */}
           <div className="prose prose-invert max-w-none mb-12">
-            <FadeInFromLeft>
+            <TypingIn>
               <h2 className="text-3xl font-bold mb-6">Restoring Power Through Technology</h2>
-            </FadeInFromLeft>
+            </TypingIn>
 
             <div className="grid md:grid-cols-3 gap-8 mb-6">
               {principles.map((principle, index) => (
