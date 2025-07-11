@@ -4,6 +4,7 @@ import Footer from '@/components/Footer';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
 import { Linkedin, Twitter, Mail } from 'lucide-react';
+import { FadeInFromUpStagger } from '@/components/ui/fade-in';
 
 const Team = () => {
   const teamMembers = [
@@ -73,32 +74,34 @@ const Team = () => {
           <h2 className="text-3xl font-bold text-center mb-12">Core Team</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {teamMembers.map((member, index) => (
-              <Card key={index} className="group hover:shadow-lg transition-all duration-300">
-                <CardContent className="p-6 text-center">
-                  <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
-                    <img 
-                      src={member.image} 
-                      alt={member.name}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                  <h3 className="text-xl font-semibold mb-1">{member.name}</h3>
-                  <p className="text-primary font-medium mb-3">{member.role}</p>
-                  <p className="text-sm text-muted-foreground mb-4">{member.bio}</p>
-                  
-                  <div className="flex justify-center space-x-3">
-                    <a href={member.social.linkedin} className="text-muted-foreground hover:text-primary transition-colors">
-                      <Linkedin className="h-4 w-4" />
-                    </a>
-                    <a href={member.social.twitter} className="text-muted-foreground hover:text-primary transition-colors">
-                      <Twitter className="h-4 w-4" />
-                    </a>
-                    <a href={`mailto:${member.social.email}`} className="text-muted-foreground hover:text-primary transition-colors">
-                      <Mail className="h-4 w-4" />
-                    </a>
-                  </div>
-                </CardContent>
-              </Card>
+              <FadeInFromUpStagger delay={index * 200}>
+                <Card key={index} className="group hover:shadow-lg transition-all duration-300 hover:shadow-lg hover:ring-2 hover:ring-primary/60 hover:-translate-y-3 transition-*">
+                  <CardContent className="p-6 text-center">
+                    <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
+                      <img 
+                        src={member.image} 
+                        alt={member.name}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                    <h3 className="text-xl font-semibold mb-1">{member.name}</h3>
+                    <p className="text-primary font-medium mb-3">{member.role}</p>
+                    <p className="text-sm text-muted-foreground mb-4">{member.bio}</p>
+                    
+                    <div className="flex justify-center space-x-3">
+                      <a href={member.social.linkedin} className="text-muted-foreground hover:text-primary transition-colors">
+                        <Linkedin className="h-4 w-4" />
+                      </a>
+                      <a href={member.social.twitter} className="text-muted-foreground hover:text-primary transition-colors">
+                        <Twitter className="h-4 w-4" />
+                      </a>
+                      <a href={`mailto:${member.social.email}`} className="text-muted-foreground hover:text-primary transition-colors">
+                        <Mail className="h-4 w-4" />
+                      </a>
+                    </div>
+                  </CardContent>
+                </Card>
+              </FadeInFromUpStagger>
             ))}
           </div>
         </div>
