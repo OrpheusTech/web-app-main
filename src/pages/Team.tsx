@@ -5,6 +5,7 @@ import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
 import { Linkedin, Twitter, Mail } from 'lucide-react';
 import { FadeInFromUpStagger } from '@/components/ui/fade-in';
+import { VineIllustration } from '@/components/ui/vine';
 
 const Team = () => {
   const teamMembers = [
@@ -12,7 +13,7 @@ const Team = () => {
       name: "Dr. Sarah Chen",
       role: "CEO & Co-Founder",
       bio: "Former NASA scientist with 15 years in satellite imagery analysis. PhD in Environmental Engineering from MIT.",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b47c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
       social: { linkedin: "#", twitter: "#", email: "sarah@orpheus.ai" }
     },
     {
@@ -72,17 +73,21 @@ const Team = () => {
       <section className="py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center mb-12">Core Team</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
             {teamMembers.map((member, index) => (
               <FadeInFromUpStagger delay={index * 200}>
-                <Card key={index} className="group hover:shadow-lg transition-all duration-300 hover:shadow-lg hover:ring-2 hover:ring-primary/60 hover:-translate-y-3 transition-*">
+                <Card key={index} className="relative group hover:shadow-lg transition-all duration-300 hover:ring-2 hover:ring-primary/60 hover:-translate-y-2 transition-* vine-container h-full flex flex-col">
                   <CardContent className="p-6 text-center">
-                    <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
-                      <img 
-                        src={member.image} 
-                        alt={member.name}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                      />
+                    <div className="flex items-center justify-center relative h-32">
+                      <VineIllustration className="w-24 h-full stroke-primary transform scale-x-[-1] -rotate-45"/>
+                      <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
+                        <img 
+                          src={member.image} 
+                          alt={member.name}
+                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                        />
+                      </div>
+                      <VineIllustration className="w-24 h-full stroke-primary rotate-45"/>
                     </div>
                     <h3 className="text-xl font-semibold mb-1">{member.name}</h3>
                     <p className="text-primary font-medium mb-3">{member.role}</p>

@@ -24,7 +24,9 @@ export const TypingIn = ({ children }: { children: React.ReactNode }) => {
   return (
     <div
       ref={ref}
-      className={`typing-text`}
+      className={`typing-text ${
+        isVisible ? 'opacity-100' : `opacity-0`
+      }`}
       style={isVisible ? { animation } : {}}
     >
       {children}
