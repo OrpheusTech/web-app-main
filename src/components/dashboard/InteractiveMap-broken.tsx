@@ -174,30 +174,39 @@ const InteractiveMap: React.FC<InteractiveMapProps> = (props) => {
         </div>
       </div>
     );
-  }
-
-  return (
-    <div className="w-full h-full relative overflow-hidden">
-      {/* Map Status Indicator */}
-      <div className="absolute top-4 left-4 z-[1000] bg-white/90 backdrop-blur-sm rounded-lg px-3 py-1 shadow-lg border border-emerald-200">
-        <div className="flex items-center gap-2">
-          <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-          <span className="text-xs font-medium text-emerald-700">Live Data</span>
-        </div>
-      </div>
-      
-      {/* Layer Count Indicator */}
-      {props.activeLayers.length > 0 && (
-        <div className="absolute top-4 right-4 z-[1000] bg-white/90 backdrop-blur-sm rounded-lg px-3 py-1 shadow-lg border border-purple-200">
+  }    return (
+      <div className="w-full h-full relative overflow-hidden">
+        {/* Map Status Indicator */}
+        <div className="absolute top-4 left-4 z-[1000] bg-white/90 backdrop-blur-sm rounded-lg px-3 py-1 shadow-lg border border-emerald-200">
           <div className="flex items-center gap-2">
-            <span className="text-xs font-medium text-purple-700">
-              {props.activeLayers.length} layer{props.activeLayers.length !== 1 ? 's' : ''} active
-            </span>
+            <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+            <span className="text-xs font-medium text-emerald-700">Live Data</span>
           </div>
         </div>
-      )}
-      
-      <MapComponent {...props} />
+        
+        {/* Layer Count Indicator */}
+        {props.activeLayers.length > 0 && (
+          <div className="absolute top-4 right-4 z-[1000] bg-white/90 backdrop-blur-sm rounded-lg px-3 py-1 shadow-lg border border-purple-200">
+            <div className="flex items-center gap-2">
+              <span className="text-xs font-medium text-purple-700">
+                {props.activeLayers.length} layer{props.activeLayers.length !== 1 ? 's' : ''} active
+              </span>
+            </div>
+          </div>
+        )}
+        
+        <MapComponent {...props} />
+      </div>
+    );
+  }
+
+  // Fallback for any other edge cases
+  return (
+    <div className="w-full h-full bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl flex items-center justify-center">
+      <div className="text-center bg-white/80 backdrop-blur-sm rounded-2xl p-6">
+        <div className="text-4xl mb-2">🗺️</div>
+        <p className="text-gray-600 font-medium">Map component unavailable</p>
+      </div>
     </div>
   );
 };
