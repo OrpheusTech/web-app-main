@@ -17,7 +17,7 @@ const ContaminationData = () => {
         <iframe
           src="https://www.ewg.org/interactive-maps/pfas_contamination/map/"
           width="100%"
-          height="600"
+          height="550"
           loading="lazy"
           className="mb-4"
           title="Interactive Water Contamination Map"
