@@ -9,6 +9,9 @@ const ContaminationData = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             New data show 8,865 sites with PFAS in 50 states
           </h2>
+          <p className="text-muted-foreground mb-4">
+            The interactive map below showcases Perfluoroalkyl and Polyfluoroalkyl Substances (PFAS, also known as forever chemicals) contamination data from thousands of sites in the United States.
+          </p>
         </div>
 
         <iframe
@@ -17,6 +20,7 @@ const ContaminationData = () => {
           height="600"
           loading="lazy"
           className="mb-4"
+          title="Interactive Water Contamination Map"
         ></iframe>
 
         <p className="text-sm text-gray-500 mt-2 mb-12">
