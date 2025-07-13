@@ -14,14 +14,18 @@ const ContaminationData = () => {
           </p>
         </div>
 
-        <iframe
-          src="https://www.ewg.org/interactive-maps/pfas_contamination/map/"
-          width="100%"
-          height="550"
-          loading="lazy"
-          className="mb-4"
-          title="Interactive Water Contamination Map"
-        ></iframe>
+        <div className="relative w-full h-[600px]">
+          <iframe
+            src="https://www.ewg.org/interactive-maps/pfas_contamination/map/"
+            width="100%"
+            height="550"
+            loading="lazy"
+            className="mb-4"
+            title="Interactive Water Contamination Map"
+          ></iframe>
+          <div className="absolute inset-0 bg-black bg-opacity-30 pointer-events-none z-10"></div>
+        </div>
+        
 
         <p className="text-sm text-gray-500 mt-2 mb-12">
           Map courtesy of the&nbsp;
