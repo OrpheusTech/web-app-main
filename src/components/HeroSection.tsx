@@ -29,6 +29,7 @@ const HeroSection = () => {
     return () => clearInterval(interval);
   }, []);
 
+  /* Cycles phrases back to the beginning seamlessly */
   useEffect(() => {
     if (activeIndex == phrases.length - 1) {
       setTimeout(() => {
@@ -62,55 +63,27 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 px-8 sm:px-16 lg:px-24">
-        <div className="space-y-8">
+        <div className="space-y-4">
           {/* Enhanced Typography with staggered animation */}
-          <div className="space-y-4">
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-light tracking-tight">
-              <span 
-                className={`text-white/90 transition-all duration-1000 ease-out inline-block ${
-                  isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-8'
-                }`}
-                style={{ 
-                  textShadow: '0 4px 20px rgba(0, 0, 0, 0.8)', 
-                  fontFamily: '"Inter", -apple-system, BlinkMacSystemFont, sans-serif'
-                }}
-              >
-                The Future of&nbsp;
-              </span>
-              <span 
-                className={`text-primary font-semibold transition-all duration-1000 ease-out delay-300 inline-block ${
-                  isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-8'
-                }`}
-                style={{ 
-                  textShadow: '0 4px 20px rgba(0, 0, 0, 0.8)',
-                  fontFamily: '"Inter", -apple-system, BlinkMacSystemFont, sans-serif'
-                }}
-              >
-                Farming
-              </span>
-              <span 
-                className={`text-white/90 transition-all duration-1000 ease-out inline-block ${
-                  isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-8'
-                }`}
-                style={{ 
-                  textShadow: '0 4px 20px rgba(0, 0, 0, 0.8)', 
-                  fontFamily: '"Inter", -apple-system, BlinkMacSystemFont, sans-serif'
-                }}
-              >
-                &nbsp;is
-              </span>
-            </h1>
-          </div>
+          <h1 className="text-5xl md:text-7xl lg:text-8xl tracking-tight">
+            <span 
+              className={`text-muted-foreground transition-all duration-1000 ease-out inline-block ${
+                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-8'
+              }`}
+            >
+              The Future of Farming
+            </span>
+          </h1>
 
           {/* Phrase Cycling */}
-          <div className="mb-8 whitespace-nowrap overflow-hidden [--line-height:3.25em] md:[--line-height:4.75em] lg:[--line-height:5.5em] h-[calc(var(--line-height)*1)]">
+          <div className="mb-8 whitespace-nowrap overflow-hidden [--line-height:4em] md:[--line-height:5.5em] lg:[--line-height:7em] h-[calc(var(--line-height)*1)]">
             <div className={`space-y-4
               ${activeIndex != 0 ? 'transition-transform duration-500 ease-out' : 'translate-y-0'}`}
               style={{ transform: `translateY(calc(-${activeIndex} * var(--line-height)))` }}>
                 {phrases.map((phrase, index) => (
                   <p
                     key={index}
-                    className="text-4xl md:text-6xl lg:text-7xl text-muted-foreground font-bold tracking-wider"
+                    className="text-5xl md:text-7xl lg:text-8xl text-white tracking-tight"
                   >
                     {phrase}
                   </p>
