@@ -52,9 +52,9 @@ const HeroSection = () => {
         loop
         muted
         playsInline
-        className="absolute inset-0 w-full h-full object-cover brightness-[0.5]"
+        className="absolute inset-0 w-full h-full object-cover"
       >
-        <source src="https://res.cloudinary.com/dfsk4hkjz/video/upload/v1752098410/output_koccg5.mp4" type="video/mp4" />
+        <source src="https://res.cloudinary.com/dfsk4hkjz/video/upload/v1752618653/My_Movie_1_ryzcnh.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
@@ -91,47 +91,26 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Enhanced CTA Button */}
-          <div className="flex pt-4">
-            <Button 
-              size="lg" 
-              onClick={scrollToTarget}
-              className="group relative px-8 py-4 text-lg font-semibold bg-primary hover:bg-primary/90 
-                         transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl 
-                         hover:shadow-primary/25 sm:px-12 sm:py-5 sm:text-xl"
-            >
-              <span className="relative z-10">Get Started</span>
-              <ArrowRight className="ml-3 h-5 w-5 transition-all duration-300 group-hover:translate-x-1 group-hover:scale-110" />
-              
-              {/* Hover glow effect */}
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/50 to-primary/30 rounded-lg opacity-0 
-                              group-hover:opacity-100 transition-opacity duration-300 blur-sm" />
-            </Button>
-          </div>
-
-          {/* Enhanced Feature Pills */}
-          <div className="flex flex-wrap gap-4 pt-8">
-            <div className="group flex items-center space-x-3 bg-white/10 backdrop-blur-md px-6 py-3 rounded-full 
-                            border border-white/20 hover:bg-white/15 hover:border-white/30 transition-all duration-300 
-                            hover:scale-105 hover:shadow-lg cursor-pointer">
-              <Cpu className="h-5 w-5 text-primary transition-all duration-300 group-hover:scale-110 group-hover:rotate-12" />
-              <span className="text-sm font-medium text-white">AI-Powered</span>
-            </div>
-            <div className="group flex items-center space-x-3 bg-white/10 backdrop-blur-md px-6 py-3 rounded-full 
-                            border border-white/20 hover:bg-white/15 hover:border-white/30 transition-all duration-300 
-                            hover:scale-105 hover:shadow-lg cursor-pointer">
-              <Leaf className="h-5 w-5 text-primary transition-all duration-300 group-hover:scale-110 group-hover:rotate-12" />
-              <span className="text-sm font-medium text-white">Soil Health</span>
-            </div>
-            <div className="group flex items-center space-x-3 bg-white/10 backdrop-blur-md px-6 py-3 rounded-full 
-                            border border-white/20 hover:bg-white/15 hover:border-white/30 transition-all duration-300 
-                            hover:scale-105 hover:shadow-lg cursor-pointer">
-              <TrendingUp className="h-5 w-5 text-primary transition-all duration-300 group-hover:scale-110 group-hover:rotate-12" />
-              <span className="text-sm font-medium text-white">Yield Optimization</span>
-            </div>
-          </div>
         </div>
       </div>
+
+      {/* Scroll down button */}
+      <button
+        onClick={scrollToTarget}
+        className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-primary animate-bounce z-20"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-16 w-16"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth={2}
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" d="M19 13l-7 7-7-7" />
+          <path strokeLinecap="round" strokeLinejoin="round" d="M19 5l-7 7-7-7" />
+        </svg>
+      </button>
     </section>
   );
 };
