@@ -108,6 +108,7 @@ const Team = () => {
                     <p className="text-primary font-medium mb-3">{member.role}</p>
                     <p className="text-sm text-muted-foreground mb-4">{member.bio}</p>
                     
+                    { /* Social media and email buttons
                     <div className="flex justify-center space-x-3">
                       <a href={member.social.linkedin} className="text-muted-foreground hover:text-primary transition-colors">
                         <Linkedin className="h-4 w-4" />
@@ -119,6 +120,7 @@ const Team = () => {
                         <Mail className="h-4 w-4" />
                       </a>
                     </div>
+                    */ }
                   </CardContent>
                 </Card>
               </FadeInFromUpStagger>
