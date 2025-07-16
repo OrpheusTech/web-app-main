@@ -12,6 +12,7 @@ import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
 import Career from "./pages/Career";
 import NotFound from "./pages/NotFound";
+import Profile from "./pages/Profile";
 
 const queryClient = new QueryClient();
 
@@ -31,6 +32,7 @@ const App = () => (
           <Route path="/blog" element={<Blog />} />
           <Route path="/careers" element={<Career />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="/profile" element={<Profile />}/>
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
