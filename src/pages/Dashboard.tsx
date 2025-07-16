@@ -7,6 +7,7 @@ import ToxinInfoPanel from '../components/dashboard/ToxinInfoPanel';
 import StatsActionBar from '../components/dashboard/StatsActionBar';
 import { ContaminantType, FilterState, ToxinInfo, FieldData } from '@/types/dashboard';
 
+
 // Sample contamination data
 const generateSampleData = () => {
   const locations = [

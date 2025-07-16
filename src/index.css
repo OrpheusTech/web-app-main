@@ -589,3 +589,13 @@
   overflow: hidden;
   white-space: nowrap;
 }
+
+.vine-path {
+  stroke-dasharray: 1489;
+  stroke-dashoffset: 1489;
+  transition: stroke-dashoffset 2s ease-in-out;
+}
+
+.vine-container:hover .vine-path {
+  stroke-dashoffset: 0;
+}

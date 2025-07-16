@@ -131,7 +131,7 @@ const Manifesto = () => {
 
             <div className="grid md:grid-cols-3 gap-8 mb-6">
               {principles.map((principle, index) => (
-                <FadeInFromUpStagger delay={index * 200}>
+                <FadeInFromUpStagger className="" delay={index * 200}>
                   <Card key={index} className="flex flex-col h-full text-left">
                     <CardContent className="flex flex-col flex-grow p-6">
                       <div className="flex items-center gap-4">

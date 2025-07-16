@@ -24,8 +24,10 @@ export const TypingIn = ({ children }: { children: React.ReactNode }) => {
   return (
     <div
       ref={ref}
-      className={`typing-text`}
-      style={isVisible ? { animation } : {}}
+      className={`typing-text ${
+        isVisible ? 'opacity-100' : `opacity-0`
+      }`}
+      style={isVisible ? { transitionDelay: '250ms', animation } : {}}
     >
       {children}
     </div>
@@ -34,12 +36,13 @@ export const TypingIn = ({ children }: { children: React.ReactNode }) => {
 
 
 interface FadeInFromUpStaggerProps {
+  className: string;
   children: React.ReactNode;
   delay?: number; // in milliseconds
 }
 
 /* Fades in elements from above and can stagger multiple elements at a time to give a cascading effect */
-export const FadeInFromUpStagger = ({ children, delay = 0 }: FadeInFromUpStaggerProps) => {
+export const FadeInFromUpStagger = ({ className, children, delay = 0 }: FadeInFromUpStaggerProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -60,7 +63,7 @@ export const FadeInFromUpStagger = ({ children, delay = 0 }: FadeInFromUpStagger
   return (
     <div
       ref={ref}
-      className={`transition-all duration-1000 ease-in-out delay-250 transform ${
+      className={`transition-all duration-1000 ease-in-out delay-250 transform ${className} ${
         isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-y-20'
       }`}
       style={{ transitionDelay: `${delay}ms` }}
@@ -95,7 +98,7 @@ export const FadeInSubtle = ({ children }: { children: React.ReactNode }) => {
       className={`transition-opacity duration-1000 ease-out ${
         isVisible ? 'opacity-100' : 'opacity-0'
       }`}
-      style={{ transitionDelay: '250ms' }}
+      style={{ transitionDelay: '500ms' }}
     >
       {children}
     </div>
