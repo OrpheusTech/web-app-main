@@ -23,7 +23,7 @@ const ContaminationData = () => {
             className="mb-4"
             title="Interactive Water Contamination Map"
           ></iframe>
-          <div className="absolute inset-0 bg-black bg-opacity-30 pointer-events-none z-10"></div>
+          <div className="absolute inset-0 bg-black bg-opacity-10 pointer-events-none z-10"></div>
         </div>
         
 
