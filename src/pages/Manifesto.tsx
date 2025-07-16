@@ -87,7 +87,7 @@ const Manifesto = () => {
                     Yearly agricultural imports are approaching
                   </p>
                   <p className="text-4xl md:text-6xl font-bold text-center text-primary animate-text bg-gradient-to-r from-primary via-white to-primary bg-[length:200%_100%] bg-clip-text text-transparent font-bold">$300 billion</p>
-                  <cite className="block text-muted-foreground text-right">— USDA (TODO: cite?)</cite>
+                  <cite className="block text-muted-foreground text-right">— USDA</cite>
                 </CardContent>
               </Card>
               <p className="text-lg text-muted-foreground mb-6">

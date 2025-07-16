@@ -5,7 +5,9 @@ export type ContaminantType =
   | 'plastic-microplastics'
   | 'fertilizer-runoff'
   | 'organic-pollutants'
-  | 'radioactive-rare';
+  | 'radioactive-rare'
+  | 'organic-solvents'
+  | 'radiological';
 
 export interface ToxinInfo {
   id: string;
@@ -24,10 +26,12 @@ export interface ToxinInfo {
 }
 
 export interface FilterState {
+  search: string;
+  contaminationType: string;
   region: string;
   severity: 'all' | 'low' | 'moderate' | 'high';
   source: 'all' | 'industrial' | 'agricultural' | 'urban';
-  cropCompatibility: 'all' | 'corn' | 'wheat' | 'soy' | 'vegetables';
+  cropCompatibility: 'all' | 'corn' | 'wheat' | 'soy' | 'vegetables' | 'low-impact' | 'moderate-impact' | 'high-impact' | 'unsuitable';
   dateRange: {
     start: string;
     end: string;
