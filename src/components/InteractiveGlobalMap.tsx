@@ -174,7 +174,7 @@ const InteractiveGlobalMap: React.FC = () => {
       style: 'mapbox://styles/mapbox/dark-v10',
       center: [0, 20], // Center on world
       zoom: 2,
-      projection: 'globe' as any
+      projection: 'globe' as const
     });
 
     // Add only essential native Mapbox controls
@@ -256,7 +256,7 @@ const InteractiveGlobalMap: React.FC = () => {
     if (map.current) {
       const newProjection = mapProjection === 'globe' ? 'mercator' : 'globe';
       setMapProjection(newProjection);
-      map.current.setProjection(newProjection as any);
+      map.current.setProjection(newProjection as 'globe' | 'mercator');
     }
   };
 
@@ -430,7 +430,7 @@ const InteractiveGlobalMap: React.FC = () => {
                   <h3 className="font-semibold text-lg text-gray-900 dark:text-white">{selectedSite.name}</h3>
                   <p className="text-sm text-gray-600 dark:text-gray-300">{selectedSite.country}</p>
                 </div>
-                <Badge variant={getStatusBadgeVariant(selectedSite.status) as any} className="rounded-lg">
+                <Badge variant={getStatusBadgeVariant(selectedSite.status) as 'default' | 'secondary' | 'destructive' | 'outline'} className="rounded-lg">
                   {selectedSite.status.toUpperCase()}
                 </Badge>
               </div>
