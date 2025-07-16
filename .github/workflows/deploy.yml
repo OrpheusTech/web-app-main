@@ -1,5 +1,6 @@
 name: Deploy to GitHub Pages
 
+# Triggers deployment on push to main branch and manual dispatch
 on:
   push:
     branches: [ "main" ]
