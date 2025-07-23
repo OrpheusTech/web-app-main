@@ -18,14 +18,14 @@ const Team = () => {
     },
     {
       name: "Pranav Mishra",
-      role: "Chief Technology Officer",
-      bio: "Pranav Mishra joined OrpheusAI as a Machine Learning engineer in 2025 and then became Chief Technology Officer. Pranav holds a B.S. in computer science from Penn State and has previously co-founded multiple startups and interned with Deloitte.",
+      role: "Machine Learning Engineer",
+      bio: "Pranav Mishra joined OrpheusAI as a Machine Learning engineer in 2025. Pranav holds a B.S. in computer science from Penn State and has previously co-founded multiple startups and interned with Deloitte.",
       image: "",
       social: { linkedin: "#", twitter: "#", email: "" }
     },
     {
       name: "Tom Follett",
-      role: "Applied AI Researcher",
+      role: "Cheif Technology Officer",
       bio: "Tom Follett holds a B.A. in mathematics from the University of San Diego. Tom resides in the Bay Area, and spends his free time teaching classical guitar lessons.",
       image: "",
       social: { linkedin: "#", twitter: "#", email: "" }
