@@ -105,9 +105,7 @@ const Navigation = () => {
               <DropdownMenuTrigger asChild>
                 <Button variant="ghost" className="relative h-10 w-10 rounded-full">
                   <Avatar className="h-9 w-9">
-                    <AvatarImage src={user.avatar} alt={user.name} />
-                    <AvatarFallback className="bg-primary text-primary-foreground">
-                      {user.initials}
+                    <AvatarFallback className="bg-primary">
                     </AvatarFallback>
                   </Avatar>
                 </Button>
