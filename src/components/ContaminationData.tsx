@@ -9,26 +9,30 @@ const ContaminationData = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             New data show 8,865 sites with PFAS in 50 states
           </h2>
-          <p className="text-muted-foreground text-right text-sm">Source: ewg</p>
+          <p className="text-muted-foreground mb-4">
+            The interactive map below showcases Perfluoroalkyl and Polyfluoroalkyl Substances (PFAS, also known as forever chemicals) contamination data from thousands of sites in the United States.
+          </p>
         </div>
 
-        {/* Map Placeholder */}
-        <Card className="mb-12">
-          <CardContent className="p-8">
-            <div 
-              className="w-full h-96 bg-cover bg-center rounded-lg relative overflow-hidden"
-              style={{
-                backgroundImage: `url('/lovable-uploads/8d01246a-2a05-4a20-ace4-90f53305da41.png')`
-              }}
-            >
-              <div className="absolute inset-0 bg-gradient-to-r from-background/60 to-transparent">
-                <div className="absolute top-4 right-4 bg-card/90 backdrop-blur-sm px-3 py-1 rounded-full text-sm">
-                  (Interactive)
-                </div>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
+        <div className="relative w-full h-[600px]">
+          <iframe
+            src="https://www.ewg.org/interactive-maps/pfas_contamination/map/"
+            width="100%"
+            height="550"
+            loading="lazy"
+            className="mb-4"
+            title="Interactive Water Contamination Map"
+          ></iframe>
+          <div className="absolute inset-0 bg-black bg-opacity-10 pointer-events-none z-10"></div>
+        </div>
+        
+
+        <p className="text-sm text-gray-500 mt-2 mb-12">
+          Map courtesy of the&nbsp;
+          <a href="https://www.ewg.org/interactive-maps/pfas_contamination/map/" target="_blank" rel="noopener noreferrer" className="underline hover:text-green-700">
+            Environmental Working Group (EWG)
+          </a>. Accessed July 12, 2025.
+        </p>
 
         {/* Problem Statement */}
         <div className="max-w-4xl mx-auto">
