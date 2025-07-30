@@ -17,16 +17,16 @@ const Team = () => {
       social: { linkedin: "#", twitter: "#", email: "" }
     },
     {
-      name: "Tom Follett",
+      name: "Emanuele Gaz",
       role: "Chief Technology Officer",
-      bio: "Tom Follett holds a B.A. in mathematics from the University of San Diego. Tom resides in the Bay Area, and spends his free time teaching classical guitar lessons.",
+      bio: "Emanuele Gaz is our CTO and holds a B.S.c in Physics from the University of Trento. He also holds M.S.c in Physics with specialization in Quantum Information and Technologies from the Hebrew University of Jerusalem, and an MBA in Energy and Environmental Management and Economics from the Università di Pavia. ",
       image: "",
       social: { linkedin: "#", twitter: "#", email: "" }
     },
     {
-      name: "Pranav Mishra",
-      role: "Machine Learning Engineer",
-      bio: "Pranav Mishra joined OrpheusAI as a Machine Learning engineer in 2025. Pranav holds a B.S. in computer science from Penn State and has previously co-founded multiple startups and interned with Deloitte.",
+      name: "Alessandro Burlando",
+      role: "Computer Scientist",
+      bio: "Alessandro Burlando is a computer scientist. He is from Genoa, Italy.",
       image: "",
       social: { linkedin: "#", twitter: "#", email: "" }
     },
@@ -43,7 +43,14 @@ const Team = () => {
       bio: "Honovi Trudell is a former member of the United States Coast Guard and the Baltimore City Police Department. Mr Trudell has worked for non-profits dedicated to regenerative agriculture and led sustainability projects in rural America.",
       image: "",
       social: { linkedin: "#", twitter: "#", email: "" }
-    }
+    },
+    {
+      name: "Tom Follett",
+      role: "AI Researcher",
+      bio: "Tom Follett holds a B.A. in mathematics from the University of San Diego. Tom resides in the Bay Area, and spends his free time teaching classical guitar lessons.",
+      image: "",
+      social: { linkedin: "#", twitter: "#", email: "" }
+    },
   ];
 
   /*
@@ -66,20 +73,19 @@ const Team = () => {
       <Navigation />
       
       {/* Hero */}
-      <section className="pt-24 pb-12">
+      <section className="pt-24 pb-12 bg-gradient-to-br from-background to-card">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Badge className="mb-4">Meet the Team</Badge>
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             The People Behind <span className="text-primary">Orpheus AI</span>
           </h1>
           <p className="text-xl text-muted-foreground">
-            A diverse team of scientists, engineers, and farmers united by a common mission to heal the earth.
           </p>
         </div>
       </section>
 
       {/* Team Members */}
-      <section className="py-12">
+      <section className="py-12 mb-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center mb-12">Core Team</h2>
           <div className="flex flex-wrap justify-center gap-8">
@@ -147,33 +153,6 @@ const Team = () => {
         </div>
       </section>
       */}
-
-      {/* Mission Statement */}
-      <section className="py-20">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Join Our Mission
-          </h2>
-          <p className="text-xl text-muted-foreground mb-8">
-            We're always looking for passionate individuals who want to make a difference in agriculture and environmental restoration.
-          </p>
-          <Card className="bg-primary/10 border-primary/20">
-            <CardContent className="p-8">
-              <h3 className="text-xl font-semibold mb-4">We're Hiring</h3>
-              <p className="text-muted-foreground mb-6">
-                Explore opportunities to work with cutting-edge AI technology while making a positive impact on the planet.
-              </p>
-              <a 
-                href="mailto:careers@orpheus.ai" 
-                className="inline-flex items-center text-primary font-medium hover:underline"
-              >
-                <Mail className="mr-2 h-4 w-4" />
-                careers@orpheus.ai
-              </a>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
 
       <Footer />
     </div>

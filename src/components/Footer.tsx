@@ -23,10 +23,10 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><Link to="/systems" className="text-muted-foreground hover:text-primary transition-colors">Systems</Link></li>
-              <li><Link to="/manifesto" className="text-muted-foreground hover:text-primary transition-colors">Manifesto</Link></li>
+              <li><Link to="/systems" className="text-muted-foreground hover:text-primary transition-colors">Product</Link></li>
+              <li><Link to="/dashboard" className="text-muted-foreground hover:text-primary transition-colors">Dashboard</Link></li>
+              <li><Link to="/manifesto" className="text-muted-foreground hover:text-primary transition-colors">About</Link></li>
               <li><Link to="/team" className="text-muted-foreground hover:text-primary transition-colors">Our Team</Link></li>
-              <li><Link to="/contact" className="text-muted-foreground hover:text-primary transition-colors">Contact</Link></li>
             </ul>
           </div>
 
@@ -35,7 +35,6 @@ const Footer = () => {
             <h3 className="font-semibold mb-4">Contact</h3>
             <ul className="space-y-2 text-muted-foreground">
               <li>hello@orpheus.ai</li>
-              <li>1-800-ORPHEUS</li>
               <li>San Francisco, CA</li>
             </ul>
           </div>
