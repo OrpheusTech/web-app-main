@@ -84,7 +84,7 @@ const Team = () => {
           <h2 className="text-3xl font-bold text-center mb-12">Core Team</h2>
           <div className="flex flex-wrap justify-center gap-8">
             {teamMembers.map((member, index) => (
-              <FadeInFromUpStagger className="lg:w-96 md:w-72 sm:w-72" delay={index * 200}>
+              <FadeInFromUpStagger className="max-w-sm" delay={index * 200}>
                 <Card key={index} className="relative group hover:shadow-lg transition-all duration-300 hover:ring-2 hover:ring-primary/60 hover:-translate-y-2 transition-* vine-container h-full flex flex-col">
                   <CardContent className="p-6 text-center">
                     { /* Profile Pictures

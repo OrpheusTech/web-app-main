@@ -6,11 +6,10 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { 
   Brain, 
-  Satellite, 
-  Microscope, 
-  Cpu, 
-  BarChart3, 
-  Zap,
+  Box, 
+  Earth, 
+  CircleDollarSign, 
+  ScrollText,
   ArrowRight,
   CheckCircle
 } from 'lucide-react';
@@ -25,32 +24,32 @@ const Systems = () => {
       features: ["Maximize Yields", "Precision Soil Insights"]
     },
     {
-      icon: Satellite,
+      icon: ScrollText,
       title: "FarmShield Contracts",
       description: "Hedge against price swings and lock in input costs with our blockchain-based futures contracts."
         + " Our peer-to-pool marketplace connects you directly to buyers and manufacturers, cutting out middlemen. Draft smart contracts to stabilize income and protect against crop losses, ensuring your farm thrives in any market.",
       features: ["Secure Your Profits", "Stress Free"]
     },
     {
-      icon: Microscope,
+      icon: Box,
       title: "LandGuard DIDs",
       description: "Safeguard your property rights with encrypted Decentralized Land Identifiers (DIDs). Prove regenerative practices and soil quality without exposing sensitive data, using our blockchain for trustless verification."
         + " Build a reputation for sustainable farming and charge premium prices for organic produce.",
       features: ["Own Your Land", "Protect Your Future"]
     },
     {
-      icon: BarChart3,
+      icon: CircleDollarSign,
       title: "Land Equity Earn While You Farm",
       description: "Subscribe to OrpheusAI tools and get 100% of your fees back as $ENTR tokens. Use them to trade organic crops, cover crops, or bio-based materials"
         + " (e.g., biofuels, bioplastics) in our decentralized marketplace. Every subscription makes you a stakeholder, driving wealth back to rural communities.",
-      features: ["Real-time monitoring", "Verification protocols", "Credit generation"]
+      features: ["Earn Your Stake", "Sustainable"]
     },
     {
-      icon: Cpu,
+      icon: Earth,
       title: "EarthRome",
       description: "EarthRome is a decentralized data integration and analytics platform designed for regenerative agriculture and environmental monitoring."
         + " It aggregates soil health, crop production, and supply chain data from farmers using IoT devices  and open-source testing protocols.",
-      features: ["Real-time monitoring", "Verification protocols", "Credit generation"]
+      features: ["Seize Control", "Data Driven"]
     }
   ];
 
@@ -90,7 +89,7 @@ const Systems = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap justify-center gap-8">
             {systemFeatures.map((feature, index) => (
-              <Card key={index} className="sm:max-w-sm md:max-w-xs lg:max-w-xl group hover:shadow-lg transition-all duration-300 border-border/50 hover:border-primary/50">
+              <Card key={index} className="w-[380px] flex-auto group hover:shadow-lg transition-all duration-300 border-border/50 hover:border-primary/50">
                 <CardHeader>
                   <div className="flex items-center space-x-4">
                     <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center group-hover:bg-primary/30 transition-colors">
