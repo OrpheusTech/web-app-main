@@ -19,26 +19,37 @@ const Systems = () => {
   const systemFeatures = [
     {
       icon: Brain,
-      title: "AI-Powered Analytics",
-      description: "Advanced machine learning algorithms process soil data to identify contamination patterns and optimal remediation strategies.",
-      features: ["Toxin mapping", "Predictive modeling", "Risk assessment"]
+      title: "SoilSync AI",
+      description: "Unlock the power of your land with AI-driven soil diagnostics. Our hyperspectral imaging and machine learning analyze pH, microbial life, and toxins"
+        + " (e.g., PFAs, heavy metals) in real time. Get tailored phytoremediation strategies to boost yields up to 10x and certify your soil for organic premiums. Sell anonymized soil data to researchers and brands for extra revenue, all while keeping your privacy secure.",
+      features: ["Maximize Yields", "Precision Soil Insights"]
     },
     {
       icon: Satellite,
-      title: "Satellite Imagery Integration",
-      description: "Real-time satellite data provides comprehensive field monitoring and change detection capabilities.",
-      features: ["Multi-spectral analysis", "Temporal monitoring", "Crop health assessment"]
+      title: "FarmShield Contracts",
+      description: "Hedge against price swings and lock in input costs with our blockchain-based futures contracts."
+        + " Our peer-to-pool marketplace connects you directly to buyers and manufacturers, cutting out middlemen. Draft smart contracts to stabilize income and protect against crop losses, ensuring your farm thrives in any market.",
+      features: ["Secure Your Profits", "Stress Free"]
     },
     {
       icon: Microscope,
-      title: "Microbiome Analysis",
-      description: "Deep soil microbiome sequencing reveals the biological foundation for effective restoration protocols.",
-      features: ["Species identification", "Diversity metrics", "Function analysis"]
+      title: "LandGuard DIDs",
+      description: "Safeguard your property rights with encrypted Decentralized Land Identifiers (DIDs). Prove regenerative practices and soil quality without exposing sensitive data, using our blockchain for trustless verification."
+        + " Build a reputation for sustainable farming and charge premium prices for organic produce.",
+      features: ["Own Your Land", "Protect Your Future"]
     },
     {
       icon: BarChart3,
-      title: "Carbon Sequestration Tracking",
-      description: "Precise measurement and verification of CO₂e sequestration for carbon credit opportunities.",
+      title: "Land Equity Earn While You Farm",
+      description: "Subscribe to OrpheusAI tools and get 100% of your fees back as $ENTR tokens. Use them to trade organic crops, cover crops, or bio-based materials"
+        + " (e.g., biofuels, bioplastics) in our decentralized marketplace. Every subscription makes you a stakeholder, driving wealth back to rural communities.",
+      features: ["Real-time monitoring", "Verification protocols", "Credit generation"]
+    },
+    {
+      icon: Cpu,
+      title: "EarthRome",
+      description: "EarthRome is a decentralized data integration and analytics platform designed for regenerative agriculture and environmental monitoring."
+        + " It aggregates soil health, crop production, and supply chain data from farmers using IoT devices  and open-source testing protocols.",
       features: ["Real-time monitoring", "Verification protocols", "Credit generation"]
     }
   ];
@@ -59,13 +70,12 @@ const Systems = () => {
       <section className="pt-24 pb-12 bg-gradient-to-br from-background to-card">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
-            <Badge className="mb-4">Advanced Technology</Badge>
+            <Badge className="mb-4">Systems</Badge>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              AI-Powered <span className="text-primary">Soil Intelligence</span>
+              Core <span className="text-primary">Technologies</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
-              Our comprehensive platform integrates cutting-edge AI, satellite imagery, and biological analysis 
-              to deliver unprecedented insights into soil health and restoration.
+              Each component of our system works together to provide comprehensive soil analysis and restoration guidance.
             </p>
             <Button size="lg" className="group">
               Request Demo
@@ -78,16 +88,9 @@ const Systems = () => {
       {/* Core Systems */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Core Technologies</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Each component of our system works together to provide comprehensive soil analysis and restoration guidance.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="flex flex-wrap justify-center gap-8">
             {systemFeatures.map((feature, index) => (
-              <Card key={index} className="group hover:shadow-lg transition-all duration-300 border-border/50 hover:border-primary/50">
+              <Card key={index} className="sm:max-w-sm md:max-w-xs lg:max-w-xl group hover:shadow-lg transition-all duration-300 border-border/50 hover:border-primary/50">
                 <CardHeader>
                   <div className="flex items-center space-x-4">
                     <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center group-hover:bg-primary/30 transition-colors">
