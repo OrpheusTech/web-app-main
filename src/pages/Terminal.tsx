@@ -6,31 +6,48 @@ import { Card, CardContent } from '@/components/ui/card';
 const Terminal = () => {
     const columns = [
         {
-            name: "Commodity"
+            name: "Commodity",
+            id: "commodity"
         },
         {
-            name: "Unit"
+            name: "Unit",
+            id: "unit"
         },
         {
-            name: "Price"
+            name: "Price",
+            id: "price"
+        },
+        {
+            name: "Day % Change",
+            id: "dayChange"
+        },
+        {
+            name: "Last Update",
+            id: "date"
         },
     ]
 
     const rows = [
         {
-            Commodity: "Soybeans",
-            Unit: "USD/Bu",
-            Price: "989.04"
+            commodity: "Soybeans",
+            unit: "USD/Bu",
+            price: "989.04",
+            date: ""
         },
         {
-            Commodity: "Wheat",
-            Unit: "USD/Bu",
-            Price: "538.25"
+            commodity: "Wheat",
+            unit: "USD/Bu",
+            price: "538.25",
+            date: ""
         },
         {
-            Commodity: "Lumber",
-            Unit: "USD/Bu",
-            Price: "678.16"
+            commodity: "Lumber",
+            unit: "USD/Bu",
+            price: "678.16",
+            date: ""
+        },
+        {  
+            commodity: "Corn"
         },
     ]
 
@@ -46,27 +63,27 @@ const Terminal = () => {
             Agricultural Commodity<span className="text-primary">&nbsp;Prices</span>
           </h1>
           <p className="text-xl text-muted-foreground">
-            Live trading price data of agricultural commodities from Trading Economics
+            Live trading price data of agricultural commodities.
           </p>
         </div>
       </section>
 
       <section className="py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <table className="w-full text-lg">
+          <table className="relative table-fixed w-full text-lg border border-separate border-spacing-y-1">
             <thead>
-                <tr>
+                <tr className="border">
                     {columns.map((col, idx) => (
-                        <th key={idx} className="border p-2 text-primary bg-card">{col.name}</th>
+                        <th key={idx} className={`text-primary bg-card py-2 pl-4 ${col.id == "commodity" ? "text-left" : "text-center"}`}>{col.name}</th>
                     ))}
                 </tr>
             </thead>
             <tbody>
                 {rows.map((row, rowIndex) => (
-                    <tr key={rowIndex} className="relative z-10 hover:shadow-lg transition-all duration-300 hover:ring-2 hover:ring-z-10 hover:ring-primary text-muted-foreground hover:text-inherit">
+                    <tr key={rowIndex} className={`${rowIndex % 2 == 1 ? "bg-card" : ""} hover:shadow-lg transition-all duration-300 hover:ring-2 hover:ring-z-10 hover:ring-primary text-muted-foreground hover:text-inherit`}>
                         {columns.map((col, colIndex) => (
-                            <td key={colIndex} className="relative border p-2 text-center">
-                                {row[col.name]}
+                            <td key={colIndex} className={`py-2 pl-4 ${col.id == "commodity" ? "text-left" : "text-center"}`}>
+                                {row[col.id]}
                             </td>
                         ))}
                     </tr>

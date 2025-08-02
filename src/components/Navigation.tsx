@@ -20,7 +20,7 @@ const Navigation = () => {
     { name: 'Dashboard', path: '/dashboard' },
     { name: 'About', path: '/manifesto' },
     { name: 'Our Team', path: '/team' },
-    { name: 'Terminal', path: '/terminal' },
+    //{ name: 'Terminal', path: '/terminal' },
     { name: 'Careers', path: '/careers' }
   ];
 
