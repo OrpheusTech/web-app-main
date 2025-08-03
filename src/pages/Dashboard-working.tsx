@@ -43,7 +43,7 @@ const Dashboard = () => {
       {/* Main Dashboard Container */}
       <div className="relative">
         {/* Dashboard Header */}
-        <div className="bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm border-b border-gray-200 dark:border-gray-700 sticky top-0 z-40">
+        <div className="pt-20 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm border-b border-gray-200 dark:border-gray-700 sticky z-40">
           <div className="container mx-auto px-4 py-4">
             <div className="flex items-center justify-between">
               <div>

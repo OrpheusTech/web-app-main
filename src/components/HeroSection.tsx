@@ -65,7 +65,7 @@ const HeroSection = () => {
       <div className="relative z-10 px-8 sm:px-16 lg:px-24">
         <div className="space-y-4">
           {/* Enhanced Typography with staggered animation */}
-          <h1 className="text-5xl md:text-7xl lg:text-8xl tracking-tight">
+          <h1 className="text-4xl md:text-6xl lg:text-8xl tracking-tight">
             <span 
               className={`text-muted-foreground transition-all duration-1000 ease-out inline-block ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-8'
