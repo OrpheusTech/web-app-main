@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import Navigation from '@/components/Navigation';
 import InteractiveGlobalMap from '../components/InteractiveGlobalMap';
-import { Activity, Map, Filter, BarChart3, Settings, Menu, X, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Upload, Map, Filter, BarChart3, Settings, Menu, X, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 interface FilterState {
   search: string;
@@ -43,7 +44,7 @@ const Dashboard = () => {
       {/* Main Dashboard Container */}
       <div className="relative">
         {/* Dashboard Header */}
-        <div className="bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm border-b border-gray-200 dark:border-gray-700 sticky top-0 z-40">
+        <div className="pt-20 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm border-b border-gray-200 dark:border-gray-700 sticky z-40">
           <div className="container mx-auto px-4 py-4">
             <div className="flex items-center justify-between">
               <div>
@@ -308,6 +309,30 @@ const Dashboard = () => {
             </div>
           )}
         </div>
+        <div className="p-4">
+          <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 h-full max-w-[500px] flex flex-col">
+            <div className="p-4 border-b border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-700 rounded-t-xl">
+              <div className="flex items-center justify-between">
+                <h2 className="font-semibold text-gray-800 dark:text-white flex items-center gap-2">
+                  <Upload className="h-4 w-4" />
+                  Soil Data Upload
+                </h2>
+              </div>
+            </div>
+            <div className="border-2 border-dashed border-gray-50 dark:border-gray-700 rounded-lg p-6 text-center m-4">
+              <Upload className="h-8 w-8 text-muted-foreground mx-auto mb-2" />
+              <p className="text-muted-foreground mb-4">
+                Drag and drop your soil data here, or click to browse
+              </p>
+              <label className="h-10 px-4 py-2 rounded-sm bg-primary text-primary-foreground hover:bg-primary/90">
+                Choose File
+                <input type="file" className="hidden" id="fileInput" />
+              </label>
+            </div>
+          </div>
+        </div>
+        
+        
       </div>
     </div>
   );
