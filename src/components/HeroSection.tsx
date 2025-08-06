@@ -63,9 +63,9 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 px-8 sm:px-16 lg:px-24">
-        <div className="space-y-4">
+        <div className="space-y-1  md:space-y-4">
           {/* Enhanced Typography with staggered animation */}
-          <h1 className="text-5xl md:text-7xl lg:text-8xl tracking-tight">
+          <h1 className="text-3xl md:text-6xl lg:text-8xl tracking-tight">
             <span 
               className={`text-muted-foreground transition-all duration-1000 ease-out inline-block ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-8'
@@ -76,14 +76,14 @@ const HeroSection = () => {
           </h1>
 
           {/* Phrase Cycling */}
-          <div className="mb-8 whitespace-nowrap overflow-hidden [--line-height:4em] md:[--line-height:5.5em] lg:[--line-height:7em] h-[calc(var(--line-height)*1)]">
+          <div className="mb-8 whitespace-nowrap overflow-hidden [--line-height:3.25em] md:[--line-height:4.75em] lg:[--line-height:7em] h-[calc(var(--line-height)*1)]">
             <div className={`space-y-4
               ${activeIndex != 0 ? 'transition-transform duration-500 ease-out' : 'translate-y-0'}`}
               style={{ transform: `translateY(calc(-${activeIndex} * var(--line-height)))` }}>
                 {phrases.map((phrase, index) => (
                   <p
                     key={index}
-                    className="text-5xl md:text-7xl lg:text-8xl text-white tracking-tight"
+                    className="text-3xl md:text-6xl lg:text-8xl text-white tracking-tight"
                   >
                     {phrase}
                   </p>
@@ -97,7 +97,7 @@ const HeroSection = () => {
       {/* Scroll down button */}
       <button
         onClick={scrollToTarget}
-        className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-primary animate-bounce z-20"
+        className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-primary animate-bounce-centered z-20"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

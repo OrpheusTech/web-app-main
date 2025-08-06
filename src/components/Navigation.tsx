@@ -207,7 +207,7 @@ const Navigation = () => {
         <div
           className={cn(
             "lg:hidden transform transition-all duration-300 ease-in-out overflow-hidden",
-            isOpen ? 'max-h-[500px] opacity-100 scale-y-100' : 'max-h-0 opacity-0 scale-y-95'
+            isOpen ? 'max-h-[600px] mb-8 opacity-100 scale-y-100' : 'max-h-0 opacity-0 scale-y-95'
           )}
         >
           <div className="px-4 pt-6 pb-6 space-y-3 bg-card/50 backdrop-blur-sm border border-border/50 rounded-lg mt-4 shadow-lg mx-4">
