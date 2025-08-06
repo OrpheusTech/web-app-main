@@ -48,7 +48,7 @@ const Manifesto = () => {
           {/* Out Agrarian Roots */}
           <div className="prose prose-invert max-w-none mb-12">
             <TypingIn>
-              <h2 className="text-3xl font-bold mb-6">Our Agrarian Roots</h2>
+              <h2 className="text-lg md:text-3xl font-bold mb-6">Our Agrarian Roots</h2>
             </TypingIn>
             <FadeInSubtle>
               <p className="text-lg text-muted-foreground mb-6">
@@ -58,9 +58,9 @@ const Manifesto = () => {
           </div>
 
           {/* Privacy and Transparency */}
-          <div className="prose prose-invert max-w-none mb-12">
+          <div className="prose prose-invert max-w-none mb-12 break-all">
             <TypingIn>
-              <h2 className="text-3xl font-bold mb-6">Privacy and Transparency</h2>
+              <h2 className="text-lg md:text-3xl font-bold mb-6">Privacy and Transparency</h2>
             </TypingIn>
             <FadeInSubtle>
               <p className="text-lg text-muted-foreground mb-6">
@@ -73,7 +73,7 @@ const Manifesto = () => {
           {/* The Costs of Global Outsourcing */}
           <div className="prose prose-invert max-w-none mb-12">
             <TypingIn>
-              <h2 className="text-3xl font-bold mb-6">The Costs of Global Outsourcing</h2>
+              <h2 className="text-lg md:text-3xl font-bold mb-6">The Costs of Global Outsourcing</h2>
             </TypingIn>
             <FadeInSubtle>
               <p className="text-lg text-muted-foreground mb-6">
@@ -100,7 +100,7 @@ const Manifesto = () => {
           {/* Agroterrorism and Chemical Infiltration */}
           <div className="prose prose-invert max-w-none mb-12">
             <TypingIn>
-              <h2 className="text-3xl font-bold mb-6">Agroterrorism and Chemical Infiltration</h2>
+              <h2 className="text-lg md:text-3xl font-bold mb-6">Agroterrorism and Chemical Infiltration</h2>
             </TypingIn>
             <FadeInSubtle>
               <p className="text-lg text-muted-foreground mb-6">
@@ -126,7 +126,7 @@ const Manifesto = () => {
           {/* Restoring Power Through Technology */}
           <div className="prose prose-invert max-w-none mb-12">
             <TypingIn>
-              <h2 className="text-3xl font-bold mb-6">Restoring Power Through Technology</h2>
+              <h2 className="text-lg md:text-3xl font-bold mb-6">Restoring Power Through Technology</h2>
             </TypingIn>
 
             <div className="grid md:grid-cols-3 gap-8 mb-6">
