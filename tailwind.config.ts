@@ -284,7 +284,11 @@ export default {
 					'100%': {
 						transform: 'scale(1.25)'
 					}
-				}
+				},
+				bounceXCentered: {
+					'0%, 100%': { transform: 'translateX(-50%) translateY(-25%)', animationTimingFunction: 'cubic-bezier(0.8,0,1,1)' },
+					'50%': { transform: 'translateX(-50%) translateY(0)', animationTimingFunction: 'cubic-bezier(0,0,0.2,1)' },
+				},
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
@@ -307,6 +311,7 @@ export default {
 				'shimmer-sweep': 'shimmer-sweep 2.5s ease-in-out infinite',
 				'orb-float': 'orb-float 6s ease-in-out infinite',
 				'dot-spring': 'dot-spring 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55)',
+				'bounce-centered': 'bounceXCentered 1s infinite'
 			}
 		}
 	},

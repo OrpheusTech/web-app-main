@@ -97,7 +97,7 @@ const HeroSection = () => {
       {/* Scroll down button */}
       <button
         onClick={scrollToTarget}
-        className="absolute bottom-4 left-[48%] text-primary animate-bounce z-20"
+        className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-primary animate-bounce-centered z-20"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
