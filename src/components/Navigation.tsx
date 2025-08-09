@@ -160,8 +160,7 @@ const Navigation = () => {
                 <Button variant="ghost" size="sm" className="h-10 w-10 p-0"> {/* Increased touch target */}
                   <Avatar className="h-8 w-8"> {/* Slightly larger avatar */}
                     <AvatarImage src={user.avatar} alt={user.name} />
-                    <AvatarFallback className="bg-primary text-primary-foreground text-xs">
-                      {user.initials}
+                    <AvatarFallback className="bg-primary">
                     </AvatarFallback>
                   </Avatar>
                 </Button>
