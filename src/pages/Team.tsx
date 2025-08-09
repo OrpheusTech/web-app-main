@@ -25,8 +25,15 @@ const Team = () => {
     },
     {
       name: "Alessandro Burlando",
-      role: "Computer Scientist",
+      role: "AI Software Engineer",
       bio: "Alessandro Burlando is a computer scientist. He is from Genoa, Italy.",
+      image: "",
+      social: { linkedin: "#", twitter: "#", email: "" }
+    },
+    {
+      name: "Gagan Gupta",
+      role: "AI Software Engineer",
+      bio: "Gagan Gupta is an AI software engineer and a founding team member at OrpheusAI. He holds a B.Tech in Computer Science from PES University, Bengaluru. Prior to joining OrpheusAI, he co-founded EduPrepAI, an AI-powered learning platform that received grant support from Meta and AMD, and served as founding engineer at MedMitra AI, a healthcare AI startup that raised $350K in angel investment. He is also a 5-time national hackathon winner and holds a patent in multimodal health AI research.",
       image: "",
       social: { linkedin: "#", twitter: "#", email: "" }
     },
