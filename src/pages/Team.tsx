@@ -38,6 +38,20 @@ const Team = () => {
       social: { linkedin: "#", twitter: "#", email: "" }
     },
     {
+      name: "Krishna Phanindra ",
+      role: "AI Software Engineer",
+      bio: "Krishna Phanindra holds an M.S. in Computer Science from the University of South Dakota, where his research developed a machine learning model to predict annual crop yields and recommend the most profitable crops for the coming year.  Beyond data-driven agriculture, Krishna has developed diverse projects such as a responsive Disney-Hotstar clone, Heart Disease Prediction models, and IoT innovations like a voice-controlled car and quadcopter.",
+      image: "",
+      social: { linkedin: "#", twitter: "#", email: "" }
+    },
+    {
+      name: "Thoyajaksha Kashyap",
+      role: "AI Software Engineer",
+      bio: "Thoyajaksha Kashyap holds an M.S. in Computer Science from the University of South Dakota, where he specialized in AI-driven healthcare and assistive technologies. His work includes developing an AI Smart Stick for the Visually Impaired during a DRDO internship, creating deep learning models for brain tumor and kidney disease detection (both IEEE-published), and building a Pap smear classification system using CNN and Transformers. Beyond healthcare AI, he engineered an NLP KPI Dashboard for gaming analytics and delivers solutions spanning embedded systems, computer vision, NLP, and full-stack development.",
+      image: "",
+      social: { linkedin: "#", twitter: "#", email: "" }
+    },
+    {
       name: "Sean Cheng",
       role: "Full Stack Engineer",
       bio: "Sean Cheng holds a B.S. in Computer Science from University of Maryland, College Park. He joined OrpheusAI’s founding team shortly after graduating and previously taught at Kumon.",
