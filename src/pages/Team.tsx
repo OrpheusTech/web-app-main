@@ -40,7 +40,7 @@ const Team = () => {
     {
       name: "Krishna Phanindra ",
       role: "AI Software Engineer",
-      bio: "Krishna Phanindra Marupaka is a AI Engineer and applied AI researcher with 2+ years of experience in deep learning for agriculture, computer vision, and NLP. He has built scalable ML pipelines using PyTorch, TensorFlow, and Azure ML for real-time geospatial analytics, and developed multi-modal models with Vision Transformers and spatial-temporal attention to predict crop yield from satellite and climate data. His work includes processing drone and hyperspectral imagery, optimizing models for toxin detection and nutrient mapping, and deploying cloud-native AI solutions. Published a paper on the detection of Pap smear Cells using CNN and Pre-trained Vision and Swin transformer in IEEE ISBI2025 conference. Received 3rd place in the Kaggle IEEE ISBI 2025 competition.  An NSF I-CORPS badge holder and Discover 60 participant, Krishna combines technical expertise with market-focused research, backed by peer-reviewed publications, competition wins, and cross-disciplinary collaboration.",
+      bio: "Krishna Phanindra Marupaka is a AI Engineer and applied AI researcher with 2+ years of experience in deep learning for agriculture, computer vision, and NLP. He has built scalable ML pipelines using PyTorch, TensorFlow, and Azure ML for real-time geospatial analytics, and developed multi-modal models with Vision Transformers and spatial-temporal attention to predict crop yield from satellite and climate data. His work includes processing drone and hyperspectral imagery, optimizing models for toxin detection and nutrient mapping, and deploying cloud-native AI solutions. Published a paper on the detection of Pap smear Cells using CNN and Pre-trained Vision and Swin transformer in IEEE ISBI2025 conference.",
       image: "",
       social: { linkedin: "#", twitter: "#", email: "" }
     },
@@ -96,7 +96,7 @@ const Team = () => {
           <h2 className="text-3xl font-bold text-center mb-12">Core Team</h2>
           <div className="columns-1 sm:columns-2 lg:columns-3 gap-4">
             {teamMembers.map((member, index) => (
-              <Card key={index} className="relative max-w-sm mb-4 break-inside-avoid group hover:shadow-lg transition-all duration-300 hover:ring-2 hover:ring-primary/60 hover:-translate-y-2 transition-* vine-container h-full flex flex-col">
+              <Card key={index} className="relative max-w-sm mb-8 break-inside-avoid group hover:shadow-lg transition-all duration-300 hover:ring-2 hover:ring-primary/60 hover:-translate-y-2 transition-* vine-container h-full flex flex-col">
                 <CardContent className="p-6 text-center">
                   { /* Profile Pictures
                   <div className="flex items-center justify-center relative h-32">
