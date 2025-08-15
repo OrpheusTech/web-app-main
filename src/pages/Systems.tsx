@@ -87,16 +87,18 @@ const Systems = () => {
       {/* Core Systems */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap justify-center gap-8">
+          <div className="flex justify-center gap-5">
             {systemFeatures.map((feature, index) => (
-              <Card key={index} className="w-[380px] flex-auto group hover:shadow-lg transition-all duration-300 border-border/50 hover:border-primary/50">
+              <Card key={index} className="w-[380px] bg-background border-2 border-card flex-auto group hover:shadow-lg transition-all duration-300 border-border/50 hover:border-primary/50">
                 <CardHeader>
-                  <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center group-hover:bg-primary/30 transition-colors">
-                      <feature.icon className="h-6 w-6 text-primary" />
-                    </div>
-                    <CardTitle className="text-xl">{feature.title}</CardTitle>
+                  <div className="relative w-12 h-12 mb-4 rounded-lg flex items-center justify-center">
+                    <div className="absolute top-0 left-0 w-3 h-3 border-t-2 border-l-2 border-primary"></div>
+                    <div className="absolute top-0 right-0 w-3 h-3 border-t-2 border-r-2 border-primary"></div>
+                    <div className="absolute bottom-0 left-0 w-3 h-3 border-b-2 border-l-2 border-primary"></div>
+                    <div className="absolute bottom-0 right-0 w-3 h-3 border-b-2 border-r-2 border-primary"></div>
+                    <feature.icon className="h-6 w-6" />
                   </div>
+                  <CardTitle className="text-xl text-primary">{feature.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground mb-4">{feature.description}</p>
