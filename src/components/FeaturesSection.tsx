@@ -63,9 +63,6 @@ const FeaturesSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-20">
-          <Badge variant="outline" className="mb-4 px-4 py-2 text-sm font-medium">
-            Advanced Technology
-          </Badge>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent">
             Revolutionary Farming
             <span className="block text-primary">Intelligence</span>
@@ -107,22 +104,6 @@ const FeaturesSection = () => {
           ))}
         </div>
 
-        {/* CTA Section */}
-        <div className="text-center bg-gradient-to-r from-primary/10 to-primary/5 rounded-2xl p-12 border border-primary/20">
-          <h3 className="text-3xl font-bold mb-4">Ready to Transform Your Farm?</h3>
-          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Join thousands of farmers already using our AI-powered platform to increase yields, reduce costs, and build sustainable operations.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button size="lg" className="group px-8 py-4 text-lg font-semibold">
-              Start Free Trial
-              <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-            </Button>
-            <Button variant="outline" size="lg" className="px-8 py-4 text-lg">
-              Schedule Demo
-            </Button>
-          </div>
-        </div>
       </div>
     </section>
   );

@@ -4,7 +4,7 @@ import { ArrowRight, MapPin, Activity, Zap } from 'lucide-react';
 
 const ValueProposition = () => {
   return (
-    <section id="scroll-target-section" className="py-20 bg-card">
+    <section id="scroll-target-section" className="py-16 bg-card">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
@@ -13,21 +13,21 @@ const ValueProposition = () => {
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
                 Regenerate Land. Turn a Profit.
               </h2>
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <p className="text-muted-foreground mb-4">
-                    We transform polluted soil into clean, fertile land with the power of AI and precision soil mapping. Bio-based remediation techniques generate
-                  </p>
-                </div>
-                <div>
-                  <p className="text-muted-foreground">
-                    high-quality industrial materials, enriching farmers as they enrich their land. The result? Clean food, thriving farmers, and healthy Americans.
-                  </p>
+              <div>
+                <p className="text-muted-foreground mb-4">
+                  We transform polluted soil into clean, fertile land with the power of AI and precision soil mapping. Bio-based remediation techniques generate high-quality industrial materials, enriching farmers as they enrich their land. The result? Clean food, thriving farmers, and healthy Americans.
+                </p>
+                <div className="pt-4">
+                  <a href="/systems" className="inline-flex items-center text-primary font-medium group">
+                    Learn More About Our Technology
+                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </a>
                 </div>
               </div>
             </div>
 
             {/* Stats Cards */}
+            {/*
             <div className="grid grid-cols-3 gap-4">
               <Card className="bg-primary/10 border-primary/20">
                 <CardContent className="p-4 text-center">
@@ -48,6 +48,7 @@ const ValueProposition = () => {
                 </CardContent>
               </Card>
             </div>
+            */}
           </div>
 
           {/* Right Content - Features */}
@@ -86,13 +87,6 @@ const ValueProposition = () => {
                   Get precise guidance on what to plant, when to rotate, and which cover crops detoxify specific contaminants.
                 </p>
               </div>
-            </div>
-
-            <div className="pt-4">
-              <a href="#" className="inline-flex items-center text-primary font-medium group">
-                Learn More About Our Technology
-                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </a>
             </div>
           </div>
         </div>
