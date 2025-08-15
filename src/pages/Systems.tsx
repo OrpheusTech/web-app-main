@@ -76,10 +76,6 @@ const Systems = () => {
             <p className="text-xl text-muted-foreground mb-8">
               Each component of our system works together to provide comprehensive soil analysis and restoration guidance.
             </p>
-            <Button size="lg" className="group">
-              Request Demo
-              <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-            </Button>
           </div>
         </div>
       </section>
