@@ -31,16 +31,16 @@ const Team = () => {
       social: { linkedin: "#", twitter: "#", email: "" }
     },
     {
-      name: "Emanuele Gaz",
-      role: "Chief Technology Officer",
-      bio: "Emanuele Gaz is our CTO and holds a B.S.c in Physics from the University of Trento. He also holds M.S.c in Physics with specialization in Quantum Information and Technologies from the Hebrew University of Jerusalem, and an MBA in Energy and Environmental Management and Economics from the Università di Pavia. ",
+      name: "Krishna Phanindra ",
+      role: "AI Software Engineer",
+      bio: "Krishna Phanindra Marupaka is a AI Engineer and applied AI researcher with 2+ years of experience in deep learning for agriculture, computer vision, and NLP. He has built scalable ML pipelines using PyTorch, TensorFlow, and Azure ML for real-time geospatial analytics, and developed multi-modal models with Vision Transformers and spatial-temporal attention to predict crop yield from satellite and climate data. His work includes processing drone and hyperspectral imagery, optimizing models for toxin detection and nutrient mapping, and deploying cloud-native AI solutions. Published a paper on the detection of Pap smear Cells using CNN and Pre-trained Vision and Swin transformer in IEEE ISBI2025 conference.",
       image: "",
       social: { linkedin: "#", twitter: "#", email: "" }
     },
     {
-      name: "Krishna Phanindra ",
-      role: "AI Software Engineer",
-      bio: "Krishna Phanindra Marupaka is a AI Engineer and applied AI researcher with 2+ years of experience in deep learning for agriculture, computer vision, and NLP. He has built scalable ML pipelines using PyTorch, TensorFlow, and Azure ML for real-time geospatial analytics, and developed multi-modal models with Vision Transformers and spatial-temporal attention to predict crop yield from satellite and climate data. His work includes processing drone and hyperspectral imagery, optimizing models for toxin detection and nutrient mapping, and deploying cloud-native AI solutions. Published a paper on the detection of Pap smear Cells using CNN and Pre-trained Vision and Swin transformer in IEEE ISBI2025 conference.",
+      name: "Emanuele Gaz",
+      role: "Chief Technology Officer",
+      bio: "Emanuele Gaz is our CTO and holds a B.S.c in Physics from the University of Trento. He also holds M.S.c in Physics with specialization in Quantum Information and Technologies from the Hebrew University of Jerusalem, and an MBA in Energy and Environmental Management and Economics from the Università di Pavia. ",
       image: "",
       social: { linkedin: "#", twitter: "#", email: "" }
     },
