@@ -34,7 +34,7 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold mb-4">Contact</h3>
             <ul className="space-y-2 text-muted-foreground">
-              <li>hello@orpheus.ai</li>
+              <a href="https://www.linkedin.com/company/orpheustech/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">LinkedIn</a>
               <li>San Francisco, CA</li>
             </ul>
           </div>

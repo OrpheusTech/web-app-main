@@ -6,6 +6,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Linkedin, Twitter, Mail } from 'lucide-react';
 import { FadeInFromUpStagger } from '@/components/ui/fade-in';
 import { VineIllustration } from '@/components/ui/vine';
+import Masonry from "react-masonry-css";
 
 const Team = () => {
   const teamMembers = [
@@ -17,23 +18,23 @@ const Team = () => {
       social: { linkedin: "https://www.linkedin.com/in/aidenyoung-/", twitter: "#", email: "" }
     },
     {
-      name: "Gagan Gupta",
-      role: "AI Software Engineer",
-      bio: "Gagan Gupta is an AI software engineer and a founding team member at OrpheusAI. He holds a B.Tech in Computer Science from PES University, Bengaluru. Prior to joining OrpheusAI, he co-founded EduPrepAI, an AI-powered learning platform that received grant support from Meta and AMD, and served as founding engineer at MedMitra AI, a healthcare AI startup that raised $350K in angel investment. He is also a 5-time national hackathon winner and holds a patent in multimodal health AI research.",
+      name: "Emanuele Gaz",
+      role: "Chief Technology Officer",
+      bio: "Emanuele Gaz is our CTO and holds a B.S.c in Physics from the University of Trento. He also holds M.S.c in Physics with specialization in Quantum Information and Technologies from the Hebrew University of Jerusalem, and an MBA in Energy and Environmental Management and Economics from the Università di Pavia. ",
       image: "",
       social: { linkedin: "https://www.linkedin.com/in/thisisgagangupta/", twitter: "#", email: "" }
     },
     {
-      name: "Alessandro Burlando",
-      role: "AI Software Engineer",
-      bio: "Alessandro Burlando is a computer scientist. He is from Genoa, Italy.",
+      name: "Honovi Trudell",
+      role: "Chief Operations Officer",
+      bio: "Honovi Trudell is a former member of the United States Coast Guard and the Baltimore City Police Department. Mr Trudell has worked for non-profits dedicated to regenerative agriculture and led sustainability projects in rural America.",
       image: "",
       social: { linkedin: "https://www.linkedin.com/in/alessandro-burlando-52243429b/", twitter: "#", email: "" }
     },
     {
-      name: "Emanuele Gaz",
-      role: "Chief Technology Officer",
-      bio: "Emanuele Gaz is our CTO and holds a B.S.c in Physics from the University of Trento. He also holds M.S.c in Physics with specialization in Quantum Information and Technologies from the Hebrew University of Jerusalem, and an MBA in Energy and Environmental Management and Economics from the Università di Pavia. ",
+      name: "Gagan Gupta",
+      role: "AI Software Engineer",
+      bio: "Gagan Gupta is an AI software engineer and a founding team member at OrpheusAI. He holds a B.Tech in Computer Science from PES University, Bengaluru. Prior to joining OrpheusAI, he co-founded EduPrepAI, an AI-powered learning platform that received grant support from Meta and AMD, and served as founding engineer at MedMitra AI, a healthcare AI startup that raised $350K in angel investment. He is also a 5-time national hackathon winner and holds a patent in multimodal health AI research.",
       image: "",
       social: { linkedin: "https://www.linkedin.com/in/emanuele-gaz-676ba8339/", twitter: "#", email: "" }
     },
@@ -45,23 +46,23 @@ const Team = () => {
       social: { linkedin: "https://www.linkedin.com/in/krishnaphanindra/", twitter: "#", email: "" }
     },
     {
-      name: "Sean Cheng",
-      role: "Full Stack Engineer",
-      bio: "Sean Cheng holds a B.S. in Computer Science from University of Maryland, College Park. He joined OrpheusAI’s founding team shortly after graduating and previously taught at Kumon.",
+      name: "Thoyajaksha Kashyap",
+      role: "AI Software Engineer",
+      bio: "Thoyajaksha Kashyap holds an M.S. in Computer Science from the University of South Dakota, where he specialized in AI-driven healthcare and assistive technologies. His work includes developing an AI Smart Stick for the Visually Impaired during a DRDO internship, creating deep learning models for brain tumor and kidney disease detection (both IEEE-published), and building a Pap smear classification system using CNN and Transformers. Beyond healthcare AI, he engineered an NLP KPI Dashboard for gaming analytics and delivers solutions spanning embedded systems, computer vision, NLP, and full-stack development.",
       image: "",
       social: { linkedin: "https://www.linkedin.com/in/sean-cheng-534871286", twitter: "#", email: "" }
     },
     {
-      name: "Honovi Trudell",
-      role: "Chief Operations Officer",
-      bio: "Honovi Trudell is a former member of the United States Coast Guard and the Baltimore City Police Department. Mr Trudell has worked for non-profits dedicated to regenerative agriculture and led sustainability projects in rural America.",
+      name: "Alessandro Burlando",
+      role: "AI Software Engineer",
+      bio: "Alessandro Burlando is a computer scientist. He is from Genoa, Italy.",
       image: "",
       social: { linkedin: "https://www.linkedin.com/in/honovi-trudell-a1094353/", twitter: "#", email: "" }
     },
     {
-      name: "Thoyajaksha Kashyap",
-      role: "AI Software Engineer",
-      bio: "Thoyajaksha Kashyap holds an M.S. in Computer Science from the University of South Dakota, where he specialized in AI-driven healthcare and assistive technologies. His work includes developing an AI Smart Stick for the Visually Impaired during a DRDO internship, creating deep learning models for brain tumor and kidney disease detection (both IEEE-published), and building a Pap smear classification system using CNN and Transformers. Beyond healthcare AI, he engineered an NLP KPI Dashboard for gaming analytics and delivers solutions spanning embedded systems, computer vision, NLP, and full-stack development.",
+      name: "Sean Cheng",
+      role: "Full Stack Engineer",
+      bio: "Sean Cheng holds a B.S. in Computer Science from University of Maryland, College Park. He joined OrpheusAI’s founding team shortly after graduating and previously taught at Kumon.",
       image: "",
       social: { linkedin: "https://www.linkedin.com/in/thoyajaksha-kashyap-kristipati/", twitter: "#", email: "" }
     },
@@ -73,6 +74,12 @@ const Team = () => {
       social: { linkedin: "https://www.linkedin.com/in/tom-follett-2691aa221/", twitter: "#", email: "" }
     },
   ];
+
+  const breakpointColumns = {
+    default: 3,
+    1024: 2,
+    512: 1,
+  };
 
   return (
     <div className="min-h-screen bg-background">
@@ -92,11 +99,15 @@ const Team = () => {
 
       {/* Team Members */}
       <section className="py-12 mb-32">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex-col justify-center">
           <h2 className="text-3xl font-bold text-center mb-12">Core Team</h2>
-          <div className="columns-1 sm:columns-2 lg:columns-3 gap-4">
+          <Masonry
+            breakpointCols={breakpointColumns}
+            className="flex gap-6 justify-center"
+            columnClassName="masonry-column"
+          >
             {teamMembers.map((member, index) => (
-              <Card key={index} className="relative max-w-sm mb-8 break-inside-avoid group hover:shadow-lg transition-all duration-300 hover:ring-2 hover:ring-primary/60 hover:-translate-y-2 transition-* vine-container h-full flex flex-col">
+              <Card key={index} className="overflow-hidden h-auto w-full mb-8 group hover:shadow-lg transition-all duration-300 hover:ring-2 hover:ring-primary/60 hover:-translate-y-2 transition-* vine-container flex flex-col">
                 <CardContent className="p-6 text-center">
                   { /* Profile Pictures
                   <div className="flex items-center justify-center relative h-32">
@@ -136,7 +147,7 @@ const Team = () => {
                 </CardContent>
               </Card>
             ))}
-          </div>
+          </Masonry>
         </div>
       </section>
 
