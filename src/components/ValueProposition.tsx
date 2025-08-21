@@ -1,5 +1,6 @@
 
 import { Card, CardContent } from '@/components/ui/card';
+import { Link } from 'react-router-dom'
 import { ArrowRight, MapPin, Activity, Zap } from 'lucide-react';
 
 const ValueProposition = () => {
@@ -18,10 +19,10 @@ const ValueProposition = () => {
                   We transform polluted soil into clean, fertile land with the power of AI and precision soil mapping. Bio-based remediation techniques generate high-quality industrial materials, enriching farmers as they enrich their land. The result? Clean food, thriving farmers, and healthy Americans.
                 </p>
                 <div className="pt-4">
-                  <a href="/systems" className="inline-flex items-center text-primary font-medium group">
+                  <Link to="/systems" className="inline-flex items-center text-primary font-medium group">
                     Learn More About Our Technology
                     <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

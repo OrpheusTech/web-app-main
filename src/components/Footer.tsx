@@ -23,30 +23,10 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><Link to="/systems" onClick={(e) => {
-                if (window.location.pathname === "/systems") {
-                  e.preventDefault();
-                  window.scrollTo(0, 0);
-                }
-              }} className="text-muted-foreground hover:text-primary transition-colors">Product</Link></li>
-              <li><Link to="/dashboard" onClick={(e) => {
-                if (window.location.pathname === "/dashboard") {
-                  e.preventDefault();
-                  window.scrollTo(0, 0);
-                }
-              }} className="text-muted-foreground hover:text-primary transition-colors">Dashboard</Link></li>
-              <li><Link to="/manifesto" onClick={(e) => {
-                if (window.location.pathname === "/manifesto") {
-                  e.preventDefault();
-                  window.scrollTo(0, 0);
-                }
-              }} className="text-muted-foreground hover:text-primary transition-colors">About</Link></li>
-              <li><Link to="/team" onClick={(e) => {
-                if (window.location.pathname === "/team") {
-                  e.preventDefault();
-                  window.scrollTo(0, 0);
-                }
-              }} className="text-muted-foreground hover:text-primary transition-colors">Our Team</Link></li>
+              <li><Link to="/systems" className="text-muted-foreground hover:text-primary transition-colors">Product</Link></li>
+              <li><Link to="/dashboard" className="text-muted-foreground hover:text-primary transition-colors">Dashboard</Link></li>
+              <li><Link to="/manifesto" className="text-muted-foreground hover:text-primary transition-colors">About</Link></li>
+              <li><Link to="/team" className="text-muted-foreground hover:text-primary transition-colors">Our Team</Link></li>
             </ul>
           </div>
 
