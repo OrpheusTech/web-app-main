@@ -161,19 +161,19 @@ const Dashboard = () => {
                     <div className="space-y-2">
                       <div className="flex justify-between text-sm">
                         <span className="text-gray-600 dark:text-gray-400">Total Sites:</span>
-                        <span className="font-medium text-gray-900 dark:text-white">127</span>
+                        <span className="font-medium text-gray-900 dark:text-white">0</span>
                       </div>
                       <div className="flex justify-between text-sm">
                         <span className="text-gray-600 dark:text-gray-400">High Risk:</span>
-                        <span className="font-medium text-red-600 dark:text-red-400">23</span>
+                        <span className="font-medium text-red-600 dark:text-red-400">0</span>
                       </div>
                       <div className="flex justify-between text-sm">
                         <span className="text-gray-600 dark:text-gray-400">Moderate Risk:</span>
-                        <span className="font-medium text-yellow-600 dark:text-yellow-400">31</span>
+                        <span className="font-medium text-yellow-600 dark:text-yellow-400">0</span>
                       </div>
                       <div className="flex justify-between text-sm">
                         <span className="text-gray-600 dark:text-gray-400">Low Risk:</span>
-                        <span className="font-medium text-green-600 dark:text-green-400">73</span>
+                        <span className="font-medium text-green-600 dark:text-green-400">0</span>
                       </div>
                     </div>
                   </div>
@@ -191,7 +191,7 @@ const Dashboard = () => {
                     <Map className="h-4 w-4" />
                     Interactive Monitoring Map
                   </h2>
-                  <div className="flex items-center gap-2">
+                  {/* <div className="flex items-center gap-2">
                     <select className="text-sm border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white rounded-lg px-2 py-1">
                       <option>Street View</option>
                       <option>Satellite</option>
@@ -200,7 +200,7 @@ const Dashboard = () => {
                     <button className="p-1 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-600 dark:text-gray-300 rounded transition-colors">
                       <Settings className="h-4 w-4" />
                     </button>
-                  </div>
+                  </div> */}
                 </div>
               </div>
               <div className="flex-1 relative">
@@ -237,10 +237,10 @@ const Dashboard = () => {
                           <div className="w-3 h-3 bg-red-500 rounded-full"></div>
                           <span className="text-sm text-gray-600 dark:text-gray-400">High Risk</span>
                         </div>
-                        <span className="text-sm font-medium text-gray-900 dark:text-white">18%</span>
+                        <span className="text-sm font-medium text-gray-900 dark:text-white">0%</span>
                       </div>
                       <div className="w-full bg-gray-200 dark:bg-gray-600 rounded-full h-2">
-                        <div className="bg-red-500 h-2 rounded-full" style={{ width: '18%' }}></div>
+                        <div className="bg-red-500 h-2 rounded-full" style={{ width: '0%' }}></div>
                       </div>
                       
                       <div className="flex items-center justify-between">
@@ -248,10 +248,10 @@ const Dashboard = () => {
                           <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
                           <span className="text-sm text-gray-600 dark:text-gray-400">Moderate</span>
                         </div>
-                        <span className="text-sm font-medium text-gray-900 dark:text-white">24%</span>
+                        <span className="text-sm font-medium text-gray-900 dark:text-white">0%</span>
                       </div>
                       <div className="w-full bg-gray-200 dark:bg-gray-600 rounded-full h-2">
-                        <div className="bg-yellow-500 h-2 rounded-full" style={{ width: '24%' }}></div>
+                        <div className="bg-yellow-500 h-2 rounded-full" style={{ width: '0%' }}></div>
                       </div>
                       
                       <div className="flex items-center justify-between">
@@ -259,10 +259,10 @@ const Dashboard = () => {
                           <div className="w-3 h-3 bg-green-500 rounded-full"></div>
                           <span className="text-sm text-gray-600 dark:text-gray-400">Low Risk</span>
                         </div>
-                        <span className="text-sm font-medium text-gray-900 dark:text-white">58%</span>
+                        <span className="text-sm font-medium text-gray-900 dark:text-white">0%</span>
                       </div>
                       <div className="w-full bg-gray-200 dark:bg-gray-600 rounded-full h-2">
-                        <div className="bg-green-500 h-2 rounded-full" style={{ width: '58%' }}></div>
+                        <div className="bg-green-500 h-2 rounded-full" style={{ width: '0%' }}></div>
                       </div>
                     </div>
                   </div>
@@ -270,7 +270,7 @@ const Dashboard = () => {
                   {/* Recent Alerts */}
                   <div>
                     <h3 className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-3">Recent Alerts</h3>
-                    <div className="space-y-3">
+                    {/* <div className="space-y-3">
                       <div className="p-3 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg">
                         <div className="flex items-start gap-2">
                           <div className="w-2 h-2 bg-red-500 rounded-full mt-2"></div>
@@ -303,7 +303,7 @@ const Dashboard = () => {
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>

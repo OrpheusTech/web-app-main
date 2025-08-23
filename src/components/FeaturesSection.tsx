@@ -63,10 +63,10 @@ const FeaturesSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent">
-            Revolutionary Farming
-            <span className="block text-primary">Intelligence</span>
-          </h2>
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent quicksand-font">
+            Revitalize Your
+            <span className="block text-primary">Farm</span>
+          </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Transform your agricultural operations with cutting-edge AI technology designed specifically for modern farming challenges.
           </p>

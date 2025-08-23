@@ -73,7 +73,7 @@ const ValueProposition = () => {
               <div>
                 <h3 className="text-lg font-semibold mb-2">Microbiome Analysis</h3>
                 <p className="text-muted-foreground">
-                  Real-time soil microbiome data reveals the optimal restoration strategy for each field.
+                  Soil microbiome data reveals the optimal restoration strategy for each field.
                 </p>
               </div>
             </div>
