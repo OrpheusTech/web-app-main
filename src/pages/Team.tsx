@@ -29,7 +29,7 @@ const Team = () => {
       role: "Chief Operations Officer",
       bio: "Honovi Trudell is a former member of the United States Coast Guard and the Baltimore City Police Department. Mr Trudell has worked for non-profits dedicated to regenerative agriculture and led sustainability projects in rural America.",
       image: "",
-      social: { linkedin: "https://www.linkedin.com/in/honovi-trudell-a1094353/", twitter: "#", email: "" }
+      social: { linkedin: "#", twitter: "#", email: "" }
     },
     {
       name: "Gagan Gupta",
