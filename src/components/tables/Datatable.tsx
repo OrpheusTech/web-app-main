@@ -551,8 +551,6 @@ export default function DataTable() {
               {allColumns.map((col) => (
                 <div key={col.id}>
                   <strong>{col.label}: </strong>
-                  {selectedRow?.[col.id] ??
-                    (col.id === "trend" ? "See graph below" : "-")}
                 </div>
               ))}
             </div>
