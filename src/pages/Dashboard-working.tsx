@@ -292,7 +292,6 @@ const Dashboard = () => {
                           </div>
                         </div>
                       </div>
-                      
                       <div className="p-3 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg">
                         <div className="flex items-start gap-2">
                           <div className="w-2 h-2 bg-blue-500 rounded-full mt-2"></div>
@@ -332,8 +331,6 @@ const Dashboard = () => {
             </div>
           </div>
         </div>
-        
-        
       </div>
       <Footer />
     </div>

@@ -15,6 +15,7 @@ import Career from "./pages/Career";
 import NotFound from "./pages/NotFound";
 import Profile from "./pages/Profile";
 import Terminal from "./pages/Terminal";
+import Economics from "./pages/Economics";
 
 const queryClient = new QueryClient();
 
@@ -40,6 +41,8 @@ const App = () => (
           <Route path="*" element={<NotFound />} />
           <Route path="/profile" element={<Profile />}/>
           <Route path="/terminal" element={<Terminal />}/>
+          <Route path="/economics" element={<Economics />}/>
+
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
