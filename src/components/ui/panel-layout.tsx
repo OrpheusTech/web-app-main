@@ -11,6 +11,7 @@ import { Button } from '@/components/ui/button';
 import { Menu, X, Plus } from 'lucide-react';
 import * as ContextMenu from "@radix-ui/react-context-menu";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuTrigger, DropdownMenuGroup } from '@/components/ui/dropdown-menu';
+import MapOverlay from '@/components/MapOverlay'
 
 import "react-mosaic-component/react-mosaic-component.css";
 
@@ -132,9 +133,8 @@ export default function PanelLayout() {
           >
             <ContextMenu.Root>
                 <ContextMenu.Trigger asChild>
-                <div style={{ padding: "1rem", height: "100%", width: "100%" }}>
-                    <h1>{id}</h1>
-                    <p>Right-click me!</p>
+                <div style={{ padding: "0rem", height: "100%", width: "100%" }}>
+                    <MapOverlay/>
                 </div>
                 </ContextMenu.Trigger>
 
