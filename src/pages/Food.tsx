@@ -37,8 +37,8 @@ const Food = () => {
             <FadeInSubtle>
               <p className="text-lg text-muted-foreground mb-6">
                 Orpheus is preserving the transparency and integrity of the food and agricultural value chain. 
-                From farm-to-table supply chain modeling and dynamic inventory sourcing to increasing crop yield and remediate waste and soil toxins, Orpheus streamlines and traces essential systems across the Nation. 
-                Our terminal enables enterprises provability for food safety and quality assurance, embedded with precise financial forecasting, while drafting encrypted contracts to  automate shipping and delivery.
+                From farm-to-table supply chain modeling and dynamic inventory sourcing to increasing crop yield and remediating waste and soil toxins, Orpheus streamlines and traces essential systems across the Nation. 
+                Our terminal enables enterprise provability for food safety and quality assurance, embedded with precise financial forecasting, while drafting encrypted contracts to  automate shipping and delivery.
               </p>
             </FadeInSubtle>
           </div>
