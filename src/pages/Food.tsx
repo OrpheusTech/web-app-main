@@ -14,7 +14,7 @@ const Food = () => {
       
       {/* Top Content */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <img src="/food.JPG" alt="Picture of food" className="absolute inset-0 w-full h-full object-cover" />
+        <img src="https://orpheustech.github.io/web-app-main/food.JPG" alt="Picture of food" className="absolute inset-0 w-full h-full object-cover" />
 
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/70 z-10" />
 
