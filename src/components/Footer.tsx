@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid md:grid-cols-12 gap-8">
           {/* Logo and Description */}
-          <div className="col-span-6">
+          <div className="col-span-6  ">
             <Link to="/" className="flex items-center space-x-2 mb-4">
               <Leaf className="h-8 w-8 text-primary" />
               <span className="text-xl font-bold text-foreground">
@@ -22,9 +22,9 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div className="col-span-2">
+          <div className="col-span-3">
             <h3 className="font-semibold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
+            <ul className="space-y-2 mb-8">
               <li>
                 <Link
                   to="/systems"
@@ -58,29 +58,30 @@ const Footer = () => {
                 </Link>
               </li>
             </ul>
+            {/* Contact Info */}
+            <div className="col-span-2">
+              <h3 className="font-semibold mb-4">Contact</h3>
+              <ul className="space-y-2 text-muted-foreground">
+                <a
+                  href="https://www.linkedin.com/company/orpheustech/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-colors"
+                >
+                  LinkedIn
+                </a>
+                <li>San Francisco, CA</li>
+              </ul>
+            </div>
           </div>
 
-          {/* Contact Info */}
-          <div className="col-span-2">
-            <h3 className="font-semibold mb-4">Contact</h3>
-            <ul className="space-y-2 text-muted-foreground">
-              <a
-                href="https://www.linkedin.com/company/orpheustech/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-primary transition-colors"
-              >
-                LinkedIn
-              </a>
-              <li>San Francisco, CA</li>
-            </ul>
-          </div>
-          <div className="col-span-2">
+          
+          <div className="col-span-3">
             <h3 className="font-semibold mb-4">Offerings</h3>
             <ul className="space-y-2">
               <li>
                 <Link
-                  to="#"
+                  to="/food"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
                   Food
