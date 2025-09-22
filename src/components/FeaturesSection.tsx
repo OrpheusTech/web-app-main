@@ -62,7 +62,7 @@ const FeaturesSection = () => {
     <section id="scroll-target-section" className="py-24 bg-gradient-to-br from-background to-muted/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-20">
+        <div className="text-center">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent quicksand-font">
             Revitalize Your
             <span className="block text-primary">Farm</span>
@@ -73,7 +73,7 @@ const FeaturesSection = () => {
         </div>
 
         {/* Features Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {features.map((feature, index) => (
             <Card 
               key={index} 
@@ -102,7 +102,7 @@ const FeaturesSection = () => {
               </CardContent>
             </Card>
           ))}
-        </div>
+        </div> */}
 
       </div>
     </section>
