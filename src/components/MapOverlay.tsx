@@ -20,9 +20,10 @@ export default function MapOverlay() {
     setOverlays((prev) => ({ ...prev, [key]: !prev[key] }));
   };
 
+	const [paneOpen, setPaneOpen] = useState(true);
+
   const triggerRef = useRef<HTMLButtonElement>(null);
   const panelRef = useRef<HTMLDivElement>(null);
-
 
   const [menuMaxWidth, setMenuMaxWidth] = useState<number | undefined>();
 
@@ -48,23 +49,23 @@ export default function MapOverlay() {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution="&copy; OpenStreetMap contributors"
       />
-        <ZoomControl position="bottomleft" />
+        <ZoomControl position="bottomright" />
       </MapContainer>
 
       {/* Menu icon */}
       <Button
         variant="outline"
-        className="absolute top-3 right-3 h-8 p-2 rounded z-[1000]"
+        className="absolute top-3 right-3 h-8 p-2 rounded z-[2000]"
         ref={triggerRef}
         onClick={() => setMenuOpen((open) => !open)}
       >
         <Menu />
       </Button>
 
-      {/* Custom horizontal menu */}
+      {/* Custom top-horizontal menu */}
       {menuOpen && (
         <div
-          className="absolute top-0 left-0 flex gap-2 p-2 bg-background border rounded shadow overflow-x-auto whitespace-nowrap z-[1000]"
+          className="absolute top-0 right-16 flex gap-2 p-2 bg-background border rounded shadow overflow-x-auto whitespace-nowrap z-[2000]"
           style={{ maxWidth: menuMaxWidth }}
         >
           {Object.keys(overlays).map((key) => (
@@ -82,6 +83,12 @@ export default function MapOverlay() {
           ))}
         </div>
       )}
+
+			<div
+					className="absolute top-0 left-0 bg-card z-[1000] h-full w-1/5"
+				>
+
+				</div>
     </div>
   );
 }
