@@ -17,7 +17,7 @@ const Navigation = () => {
   const navItems = [
     { name: 'Home', path: '/' },
     { name: 'Product', path: '/systems' },
-    { name: 'Dashboard', path: '/dashboard' },
+    // { name: 'Dashboard', path: '/dashboard' },
     { name: 'About', path: '/manifesto' },
     { name: 'Our Team', path: '/team' },
     //{ name: 'Terminal', path: '/terminal' },
