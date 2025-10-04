@@ -1,0 +1,275 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Louis Dreyfus Company",
+        "name": "Louis Dreyfus Company — Global HQ",
+        "type": "Headquarters",
+        "location": "Rotterdam, Netherlands",
+        "coordinates": [4.47917, 51.9225],
+        "commodities": "Soybean, Wheat, Corn, Cotton"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [4.47917, 51.9225]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Louis Dreyfus Company",
+        "name": "Louis Dreyfus Company — Cahokia Facility",
+        "type": "Facility",
+        "location": "Cahokia, IL, USA",
+        "coordinates": [-90.1833, 38.6275],
+        "commodities": "Soybean, Wheat, Corn, Cotton"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-90.1833, 38.6275]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Louis Dreyfus Company",
+        "name": "Louis Dreyfus Company — Claypool Facility",
+        "type": "Facility",
+        "location": "Claypool, IN, USA",
+        "coordinates": [-85.8272, 41.0894],
+        "commodities": "Soybean, Wheat, Corn, Cotton"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-85.8272, 41.0894]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Louis Dreyfus Company",
+        "name": "Louis Dreyfus Company — Grand Junction Facility",
+        "type": "Facility",
+        "location": "Grand Junction, IA, USA",
+        "coordinates": [-91.9775, 41.9731],
+        "commodities": "Soybean, Wheat, Corn, Cotton"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-91.9775, 41.9731]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Louis Dreyfus Company",
+        "name": "Louis Dreyfus Company — Port Allen Facility",
+        "type": "Facility",
+        "location": "Port Allen, LA, USA",
+        "coordinates": [-91.1972, 30.4603],
+        "commodities": "Soybean, Wheat, Corn, Cotton"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-91.1972, 30.4603]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Louis Dreyfus Company",
+        "name": "Louis Dreyfus Company — Rosedale Facility",
+        "type": "Facility",
+        "location": "Rosedale, MS, USA",
+        "coordinates": [-90.7775, 33.4269],
+        "commodities": "Soybean, Wheat, Corn, Cotton"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-90.7775, 33.4269]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Louis Dreyfus Company",
+        "name": "Louis Dreyfus Company — West Memphis Facility",
+        "type": "Facility",
+        "location": "West Memphis, AR, USA",
+        "coordinates": [-90.1895, 35.1478],
+        "commodities": "Soybean, Wheat, Corn, Cotton"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-90.1895, 35.1478]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Louis Dreyfus Company",
+        "name": "Louis Dreyfus Company — Upper Sandusky Facility",
+        "type": "Facility",
+        "location": "Upper Sandusky, OH, USA",
+        "coordinates": [-83.2786, 40.8583],
+        "commodities": "Soybean, Wheat, Corn, Cotton"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-83.2786, 40.8583]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Olam Group",
+        "name": "Olam Group — Global HQ",
+        "type": "Headquarters",
+        "location": "Singapore",
+        "coordinates": [103.8558, 1.2903],
+        "commodities": "Cocoa, Coffee, Cotton"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [103.8558, 1.2903]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Olam Group",
+        "name": "Olam Group — Côte d'Ivoire Facility",
+        "type": "Facility",
+        "location": "Côte d'Ivoire",
+        "coordinates": [-5.5471, 7.5399],
+        "commodities": "Cocoa, Coffee, Cotton"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-5.5471, 7.5399]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Olam Group",
+        "name": "Olam Group — Ghana Facility",
+        "type": "Facility",
+        "location": "Ghana",
+        "coordinates": [-0.1869, 5.6037],
+        "commodities": "Cocoa, Coffee, Cotton"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-0.1869, 5.6037]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Olam Group",
+        "name": "Olam Group — Mozambique Facility",
+        "type": "Facility",
+        "location": "Mozambique",
+        "coordinates": [35.5296, -25.9553],
+        "commodities": "Cocoa, Coffee, Cotton"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [35.5296, -25.9553]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Olam Group",
+        "name": "Olam Group — Nigeria Facility",
+        "type": "Facility",
+        "location": "Nigeria",
+        "coordinates": [8.6753, 9.082],
+        "commodities": "Cocoa, Coffee, Cotton"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [8.6753, 9.082]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Olam Group",
+        "name": "Olam Group — Republic of Congo Facility",
+        "type": "Facility",
+        "location": "Republic of Congo",
+        "coordinates": [15.827, -0.228],
+        "commodities": "Cocoa, Coffee, Cotton"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.827, -0.228]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "SLC Agrícola",
+        "name": "SLC Agrícola — Global HQ",
+        "type": "Headquarters",
+        "location": "Porto Alegre, Brazil",
+        "coordinates": [-51.2205, -30.0333],
+        "commodities": "Cotton, Grains"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-51.2205, -30.0333]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "SLC Agrícola",
+        "name": "SLC Agrícola — Perdizes Farm",
+        "type": "Facility",
+        "location": "Perdizes, Brazil",
+        "coordinates": [-51.2205, -30.0333],
+        "commodities": "Cotton, Grains"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-51.2205, -30.0333]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "SLC Agrícola",
+        "name": "SLC Agrícola — Paiaguás Farm",
+        "type": "Facility",
+        "location": "Paiaguás, Brazil",
+        "coordinates": [-51.2205, -30.0333],
+        "commodities": "Cotton, Grains"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-51.2205, -30.0333]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "SLC Agrícola",
+        "name": "SLC Agrícola — Planorte Farm",
+        "type": "Facility",
+        "location": "Planorte, Brazil",
+        "coordinates": [-51.2205, -30.0333],
+        "commodities": "Cotton, Grains"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-51.2205, -30.0333]
+      }
+    }
+  ]
+}

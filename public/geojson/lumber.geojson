@@ -1,0 +1,245 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Weyerhaeuser",
+        "name": "Weyerhaeuser — Global HQ",
+        "type": "Headquarters",
+        "location": "Seattle, WA",
+        "coordinates": [-122.3372, 47.5912],
+        "commodities": "Lumber, Timber"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.3372, 47.5912]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Weyerhaeuser",
+        "name": "Weyerhaeuser — Columbia Falls MDF Plant",
+        "type": "Facility",
+        "location": "Columbia Falls, MT",
+        "coordinates": [-114.3145, 48.3669],
+        "commodities": "Lumber, Timber"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-114.3145, 48.3669]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "West Fraser",
+        "name": "West Fraser — Global HQ",
+        "type": "Headquarters",
+        "location": "Vancouver, BC, Canada",
+        "coordinates": [-123.1216, 49.2827],
+        "commodities": "Lumber, Timber"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-123.1216, 49.2827]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "West Fraser",
+        "name": "West Fraser — Barwick OSB Mill",
+        "type": "Facility",
+        "location": "Barwick, ON, Canada",
+        "coordinates": [-81.6667, 48.4167],
+        "commodities": "Lumber, Timber"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-81.6667, 48.4167]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Canfor",
+        "name": "Canfor — Global HQ",
+        "type": "Headquarters",
+        "location": "Vancouver, BC, Canada",
+        "coordinates": [-123.1216, 49.2827],
+        "commodities": "Lumber, Timber"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-123.1216, 49.2827]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Canfor",
+        "name": "Canfor — Prince George Sawmill",
+        "type": "Facility",
+        "location": "Prince George, BC, Canada",
+        "coordinates": [-122.749, 53.917],
+        "commodities": "Lumber, Timber"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.749, 53.917]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Interfor",
+        "name": "Interfor — Global HQ",
+        "type": "Headquarters",
+        "location": "Vancouver, BC, Canada",
+        "coordinates": [-123.1216, 49.2827],
+        "commodities": "Lumber, Timber"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-123.1216, 49.2827]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Interfor",
+        "name": "Interfor — Castlegar Sawmill",
+        "type": "Facility",
+        "location": "Castlegar, BC, Canada",
+        "coordinates": [-117.662, 49.3167],
+        "commodities": "Lumber, Timber"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-117.662, 49.3167]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Weyerhaeuser",
+        "name": "Weyerhaeuser — Dodson Lumber Mill",
+        "type": "Facility",
+        "location": "Dodson, LA",
+        "coordinates": [-92.9675, 32.1042],
+        "commodities": "Lumber, Timber"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-92.9675, 32.1042]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Weyerhaeuser",
+        "name": "Weyerhaeuser — Raymond Sawmill",
+        "type": "Facility",
+        "location": "Raymond, WA",
+        "coordinates": [-123.701, 46.667],
+        "commodities": "Lumber, Timber"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-123.701, 46.667]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "West Fraser",
+        "name": "West Fraser — Lake Butler Sawmill",
+        "type": "Facility",
+        "location": "Lake Butler, FL",
+        "coordinates": [-82.973, 30.028],
+        "commodities": "Lumber, Timber"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-82.973, 30.028]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "West Fraser",
+        "name": "West Fraser — Winnfield Sawmill",
+        "type": "Facility",
+        "location": "Winnfield, LA",
+        "coordinates": [-92.656, 31.934],
+        "commodities": "Lumber, Timber"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-92.656, 31.934]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Canfor",
+        "name": "Canfor — Axis Sawmill",
+        "type": "Facility",
+        "location": "Axis, AL",
+        "coordinates": [-88.125, 31.212],
+        "commodities": "Lumber, Timber"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-88.125, 31.212]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Canfor",
+        "name": "Canfor — DeRidder Sawmill",
+        "type": "Facility",
+        "location": "DeRidder, LA",
+        "coordinates": [-93.281, 30.854],
+        "commodities": "Lumber, Timber"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-93.281, 30.854]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Interfor",
+        "name": "Interfor — Bay Springs Sawmill",
+        "type": "Facility",
+        "location": "Bay Springs, MS",
+        "coordinates": [-89.249, 31.864],
+        "commodities": "Lumber, Timber"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-89.249, 31.864]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Interfor",
+        "name": "Interfor — Grand Forks Sawmill",
+        "type": "Facility",
+        "location": "Grand Forks, BC",
+        "coordinates": [-118.432, 49.016],
+        "commodities": "Lumber, Timber"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.432, 49.016]
+      }
+    }
+  ]
+}

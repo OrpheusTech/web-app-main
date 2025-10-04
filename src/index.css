@@ -630,3 +630,37 @@ html, body {
   font-weight: 300;
   font-style: normal;
 }
+
+/* Panel css */
+
+.mosaic {
+  background-color: hsl(var(--background)) !important;
+}
+
+.mosaic .mosaic-window {
+  border-radius: var(--radius);
+  border: 1px solid hsl(var(--border));
+  background-color: hsl(var(--card)) !important;
+  color: hsl(var(--card-foreground));
+}
+
+.mosaic .mosaic-window-toolbar {
+  background-color: hsl(var(--secondary)) !important;
+  color: hsl(var(--secondary-foreground));
+  font-weight: 600;
+  padding: 6px 0px;
+  border-bottom: 1px solid hsl(var(--border));
+}
+
+.mosaic .mosaic-window-body {
+  background-color: hsl(var(--card)) !important;
+  color: hsl(var(--card-foreground));
+  padding: 0.5rem;
+}
+
+.mosaic-split {
+  background-color: hsl(var(--card));
+}
+.mosaic-split:hover {
+  background-color: hsl(var(--accent));
+}

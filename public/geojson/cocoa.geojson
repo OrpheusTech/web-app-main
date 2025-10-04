@@ -1,0 +1,110 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Olam Group",
+        "name": "Olam Group — Cocoa Innovation Centre, Willowbrook, IL",
+        "type": "Facility",
+        "commodities": "Cocoa, Coffee, Cotton",
+        "location": "Willowbrook, IL",
+        "coordinates": [-87.9336, 41.7442]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-87.9336, 41.7442]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Olam Group",
+        "name": "Olam Group — Cotton facility, USA",
+        "type": "Facility",
+        "commodities": "Cocoa, Coffee, Cotton",
+        "location": "USA",
+        "coordinates": [-98.5795, 39.8283]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-98.5795, 39.8283]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Barry Callebaut",
+        "name": "Barry Callebaut — Neemrana, India",
+        "type": "Facility",
+        "commodities": "Cocoa",
+        "location": "Neemrana, India",
+        "coordinates": [76.372, 27.926]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [76.372, 27.926]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Barry Callebaut",
+        "name": "Barry Callebaut — Brantford, Canada",
+        "type": "Facility",
+        "commodities": "Cocoa",
+        "location": "Brantford, Canada",
+        "coordinates": [-80.248, 43.139]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-80.248, 43.139]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Barry Callebaut",
+        "name": "Barry Callebaut — Mexico plant",
+        "type": "Facility",
+        "commodities": "Cocoa",
+        "location": "Mexico",
+        "coordinates": [-99.133, 19.433]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-99.133, 19.433]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Barry Callebaut",
+        "name": "Barry Callebaut — Lokeren, Belgium distribution center",
+        "type": "Facility",
+        "commodities": "Cocoa",
+        "location": "Lokeren, Belgium",
+        "coordinates": [3.981, 51.163]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [3.981, 51.163]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Barry Callebaut",
+        "name": "Barry Callebaut — Cocoa region, Brazil",
+        "type": "Facility",
+        "commodities": "Cocoa",
+        "location": "Brazil",
+        "coordinates": [-51.9253, -14.2350]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-51.9253, -14.2350]
+      }
+    }
+  ]
+}
