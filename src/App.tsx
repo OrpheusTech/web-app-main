@@ -15,6 +15,9 @@ import Career from "./pages/Career";
 import NotFound from "./pages/NotFound";
 import Profile from "./pages/Profile";
 import Terminal from "./pages/Terminal";
+import Economics from "./pages/Economics";
+import Food from "./pages/Food"
+import Career_old from "./pages/Career_old";
 
 const queryClient = new QueryClient();
 
@@ -40,6 +43,9 @@ const App = () => (
           <Route path="*" element={<NotFound />} />
           <Route path="/profile" element={<Profile />}/>
           <Route path="/terminal" element={<Terminal />}/>
+          <Route path="/economics" element={<Economics />}/>
+          <Route path="/food" element={<Food />}/>
+          <Route path="/careers_old" element={<Career_old />}/>
         </Routes>
       </BrowserRouter>
     </TooltipProvider>

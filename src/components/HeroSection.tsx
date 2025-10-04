@@ -10,7 +10,7 @@ const phrases = [
   "Radically Clean",
 ];
 
-const HeroSection = () => {
+const    HeroSection = () => {
   /* Phrase Cycling State */
   const [activeIndex, setActiveIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(false);

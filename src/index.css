@@ -2,6 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Alliance No2";
+  src: url("/fonts/alliance-2-font.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Alliance No2";
+  src: url("/fonts/alliance-2-bold-font.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Apply the font globally */
+html, body {
+  font-family: "Alliance No2", sans-serif;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
