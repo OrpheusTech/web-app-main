@@ -1,0 +1,95 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Kernel",
+        "name": "Kernel — Global HQ",
+        "type": "Headquarters",
+        "location": "Kyiv, Ukraine",
+        "coordinates": [30.5234, 50.4501],
+        "commodities": "Sunflower Oil, Grains"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [30.5234, 50.4501]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Kernel",
+        "name": "Kernel — Zaporizhzhia Sunflower Oil Plant",
+        "type": "Facility",
+        "location": "Zaporizhzhia, Ukraine",
+        "coordinates": [35.1396, 47.8388],
+        "commodities": "Sunflower Oil"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [35.1396, 47.8388]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Kernel",
+        "name": "Kernel — Mykolaiv Grain Terminal",
+        "type": "Facility",
+        "location": "Mykolaiv, Ukraine",
+        "coordinates": [31.9646, 46.9750],
+        "commodities": "Grains"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [31.9646, 46.9750]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Bunge",
+        "name": "Bunge — Global HQ / North America office",
+        "type": "Headquarters",
+        "location": "St. Louis, Missouri, USA",
+        "coordinates": [-90.5771, 38.6631],
+        "commodities": "Sunflower Oil, Vegetable Oils"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-90.5771, 38.6631]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Bunge",
+        "name": "Bunge — Milling / Processing Plant",
+        "type": "Facility",
+        "location": "Chesterfield, Missouri, USA",
+        "coordinates": [-90.4312, 38.6957],
+        "commodities": "Sunflower Oil"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-90.4312, 38.6957]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Bunge",
+        "name": "Bunge — Vegetable Oil Plant",
+        "type": "Facility",
+        "location": "Newport, Arkansas, USA",
+        "coordinates": [-91.2711, 35.6101],
+        "commodities": "Vegetable Oils"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-91.2711, 35.6101]
+      }
+    }
+  ]
+}

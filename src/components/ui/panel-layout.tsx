@@ -8,7 +8,7 @@ import {
   getLeaves,
 } from "react-mosaic-component";
 import { Button } from '@/components/ui/button';
-import { Menu, X, Plus } from 'lucide-react';
+import { Menu, X, Map, Link, ChartPie, BookOpen } from 'lucide-react';
 import * as ContextMenu from "@radix-ui/react-context-menu";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuTrigger, DropdownMenuGroup } from '@/components/ui/dropdown-menu';
 import MapOverlay from '@/components/MapOverlay'
@@ -95,54 +95,41 @@ export default function PanelLayout() {
             path={path}
             draggable={false}
             title={
-                <DropdownMenu>
-                    <DropdownMenuTrigger asChild>
+              <ContextMenu.Root>
+                <ContextMenu.Trigger asChild>
+                  <div className="w-full">
+                    <DropdownMenu>
+                      <DropdownMenuTrigger asChild>
                         <Button variant="ghost" className="p-0">
-                            <Menu className="text-foreground"/>
+                          <Menu className="text-foreground"/>
                         </Button>
-                    </DropdownMenuTrigger>
-
-                    <DropdownMenuContent align="start">
+                      </DropdownMenuTrigger>
+                      <DropdownMenuContent align="start">
                         <DropdownMenuLabel>Set Panel</DropdownMenuLabel>
                         <DropdownMenuGroup>
-                            <DropdownMenuItem onClick={() => alert("Add panel clicked")}>
-                                Set Map
-                            </DropdownMenuItem>
-                            <DropdownMenuItem onClick={() => alert("Add panel clicked")}>
-                                Set Industry
-                            </DropdownMenuItem>
-                            <DropdownMenuItem onClick={() => alert("Close panel clicked")}>
-                                Set Economics
-                            </DropdownMenuItem>
-                            <DropdownMenuItem onClick={() => alert("Add panel clicked")}>
-                                Set Transact
-                            </DropdownMenuItem>
-                            <DropdownMenuItem onClick={() => alert("Add panel clicked")}>
-                                Set Orpheus
-                            </DropdownMenuItem>
+                          <DropdownMenuItem onClick={() => alert("Map clicked")}>
+                            <Map className="mr-2 h-4 w-4"/> Map
+                          </DropdownMenuItem>
+                          <DropdownMenuItem onClick={() => alert("Supply chain clicked")}>
+                            <Link className="mr-2 h-4 w-4"/> Supply Chain
+                          </DropdownMenuItem>
+                          <DropdownMenuItem onClick={() => alert("Economics clicked")}>
+                            <ChartPie className="mr-2 h-4 w-4"/> Economics
+                          </DropdownMenuItem>
+                          <DropdownMenuItem onClick={() => alert("Orpheus clicked")}>
+                            <BookOpen className="mr-2 h-4 w-4"/> Orpheus
+                          </DropdownMenuItem>
                         </DropdownMenuGroup>
-                    </DropdownMenuContent>
-                    
-                </DropdownMenu>
-            }
-            toolbarControls={[
-              <Button variant="ghost" key="close" className="w-0 h-4 mr-2" onClick={() => closePanelAt(path)}>
-                <X/>
-              </Button>,
-            ]}
-          >
-            <ContextMenu.Root>
-                <ContextMenu.Trigger asChild>
-                <div style={{ padding: "0rem", height: "100%", width: "100%" }}>
-                    <MapOverlay/>
-                </div>
+                      </DropdownMenuContent>
+                    </DropdownMenu>
+                  </div>
                 </ContextMenu.Trigger>
 
                 <ContextMenu.Portal>
-                <ContextMenu.Content
+                  <ContextMenu.Content
                     className="z-50 min-w-[8rem] rounded-md border bg-popover p-1 text-popover-foreground shadow-md"
                     align="start"
-                >
+                  >
                     <ContextMenu.Label className="px-2 py-1.5 text-sm font-semibold">
                     Panel Actions
                     </ContextMenu.Label>
@@ -170,9 +157,17 @@ export default function PanelLayout() {
                     >
                     Add Panel Right
                     </ContextMenu.Item>
-                </ContextMenu.Content>
+                  </ContextMenu.Content>
                 </ContextMenu.Portal>
-            </ContextMenu.Root>
+              </ContextMenu.Root>
+            }
+            toolbarControls={[
+              <Button variant="ghost" key="close" className="w-0 h-4 mr-2" onClick={() => closePanelAt(path)}>
+                <X/>
+              </Button>,
+            ]}
+          >
+            <MapOverlay/>
           </MosaicWindow>
         )}
         value={layout}

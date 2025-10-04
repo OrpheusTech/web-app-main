@@ -1,0 +1,215 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Archer Daniels Midland (ADM)",
+        "name": "ADM — Global HQ (Chicago, IL)",
+        "type": "Headquarters",
+        "location": "Chicago, IL",
+        "coordinates": [-87.630296, 41.886512],
+        "commodities": "Soybean, Corn, Wheat"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-87.630296, 41.886512]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Archer Daniels Midland (ADM)",
+        "name": "ADM — North America / Decatur plant",
+        "type": "Facility",
+        "location": "Decatur, IL",
+        "coordinates": [-88.887752, 39.867062],
+        "commodities": "Soybean, Corn, Wheat"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-88.887752, 39.867062]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Bunge",
+        "name": "Bunge — Global HQ / North America office",
+        "type": "Headquarters",
+        "location": "Chesterfield, MO",
+        "coordinates": [-90.57707, 38.6631083],
+        "commodities": "Soybean, Corn, Wheat"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-90.57707, 38.6631083]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Bunge",
+        "name": "Bunge Milling / North America",
+        "type": "Facility",
+        "location": "Maryland Heights, MO",
+        "coordinates": [-90.43123, 38.69566],
+        "commodities": "Soybean, Corn, Wheat"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-90.43123, 38.69566]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Cargill",
+        "name": "Cargill — Global HQ / Office Center",
+        "type": "Headquarters",
+        "location": "Wayzata, MN",
+        "coordinates": [-93.4771217, 44.9523136],
+        "commodities": "Soybean, Corn, Wheat"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-93.4771217, 44.9523136]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Louis Dreyfus Company (LDC)",
+        "name": "LDC — Cahokia, IL",
+        "type": "Facility",
+        "location": "Cahokia, IL",
+        "coordinates": [-90.19, 38.57083],
+        "commodities": "Soybean, Corn, Wheat"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-90.19, 38.57083]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Louis Dreyfus Company (LDC)",
+        "name": "LDC — Claypool, IN",
+        "type": "Facility",
+        "location": "Claypool, IN",
+        "coordinates": [-85.880547, 41.129211],
+        "commodities": "Soybean, Corn, Wheat"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-85.880547, 41.129211]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Louis Dreyfus Company (LDC)",
+        "name": "LDC — Grand Junction, IA",
+        "type": "Facility",
+        "location": "Grand Junction, IA",
+        "coordinates": [-94.2354, 42.0312],
+        "commodities": "Soybean, Corn, Wheat"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-94.2354, 42.0312]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Louis Dreyfus Company (LDC)",
+        "name": "LDC — Port Allen, LA",
+        "type": "Facility",
+        "location": "Port Allen, LA",
+        "coordinates": [-91.2060, 30.4522],
+        "commodities": "Soybean, Corn, Wheat"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-91.2060, 30.4522]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Louis Dreyfus Company (LDC)",
+        "name": "LDC — Rosedale, MS",
+        "type": "Facility",
+        "location": "Rosedale, MS",
+        "coordinates": [-91.027886, 33.853442],
+        "commodities": "Soybean, Corn, Wheat"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-91.027886, 33.853442]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Louis Dreyfus Company (LDC)",
+        "name": "LDC — West Memphis, AR",
+        "type": "Facility",
+        "location": "West Memphis, AR",
+        "coordinates": [-90.1845388, 35.1464797],
+        "commodities": "Soybean, Corn, Wheat"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-90.1845388, 35.1464797]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Louis Dreyfus Company (LDC)",
+        "name": "LDC — Upper Sandusky, OH",
+        "type": "Facility",
+        "location": "Upper Sandusky, OH",
+        "coordinates": [-83.281311, 40.827278],
+        "commodities": "Soybean, Corn, Wheat"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-83.281311, 40.827278]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Viterra",
+        "name": "Viterra — Global HQ",
+        "type": "Headquarters",
+        "location": "Regina, SK, Canada",
+        "coordinates": [-104.6189, 50.4452],
+        "commodities": "Corn, Wheat, Soybean"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-104.6189, 50.4452]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Viterra",
+        "name": "Viterra — Facility / Grain Terminal",
+        "type": "Facility",
+        "location": "Lethbridge, AB, Canada",
+        "coordinates": [-112.835, 49.699],
+        "commodities": "Corn, Wheat, Soybean"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-112.835, 49.699]
+      }
+    }
+  ]
+}

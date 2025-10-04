@@ -1,0 +1,95 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Manitoba Harvest",
+        "name": "Manitoba Harvest — Global HQ",
+        "type": "Headquarters",
+        "location": "Winnipeg, Manitoba, Canada",
+        "coordinates": [-97.1384, 49.8951],
+        "commodities": "Hemp Oil, Hemp Products"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-97.1384, 49.8951]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Manitoba Harvest",
+        "name": "Manitoba Harvest — Production Facility",
+        "type": "Facility",
+        "location": "Winnipeg, Manitoba, Canada",
+        "coordinates": [-97.1430, 49.9025],
+        "commodities": "Hemp Oil, Hemp Products"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-97.1430, 49.9025]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Charlotte's Web",
+        "name": "Charlotte's Web — Global HQ",
+        "type": "Headquarters",
+        "location": "Denver, Colorado, USA",
+        "coordinates": [-104.9903, 39.7392],
+        "commodities": "Hemp, CBD Oil"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-104.9903, 39.7392]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Charlotte's Web",
+        "name": "Charlotte's Web — Production Facility",
+        "type": "Facility",
+        "location": "Colorado Springs, Colorado, USA",
+        "coordinates": [-104.8214, 38.8339],
+        "commodities": "Hemp, CBD Oil"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-104.8214, 38.8339]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Elixinol",
+        "name": "Elixinol — Global HQ",
+        "type": "Headquarters",
+        "location": "Denver, Colorado, USA",
+        "coordinates": [-104.9915, 39.7392],
+        "commodities": "Hemp, CBD Oil"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-104.9915, 39.7392]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Elixinol",
+        "name": "Elixinol — Production Facility",
+        "type": "Facility",
+        "location": "Colorado Springs, Colorado, USA",
+        "coordinates": [-104.8212, 38.8340],
+        "commodities": "Hemp, CBD Oil"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-104.8212, 38.8340]
+      }
+    }
+  ]
+}

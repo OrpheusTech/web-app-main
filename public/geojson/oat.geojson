@@ -1,0 +1,125 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Richardson International",
+        "name": "Richardson International — Global HQ",
+        "type": "Headquarters",
+        "location": "Winnipeg, Manitoba, Canada",
+        "coordinates": [-97.1392, 49.8951],
+        "commodities": "Canola, Oilseed, Oat"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-97.1392, 49.8951]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Richardson International",
+        "name": "Richardson Oilseed — Lethbridge Facility",
+        "type": "Facility",
+        "location": "Lethbridge, Alberta, Canada",
+        "coordinates": [-112.847, 49.7001],
+        "commodities": "Canola, Oilseed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-112.847, 49.7001]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Richardson International",
+        "name": "Richardson Milling — South Sioux City Facility",
+        "type": "Facility",
+        "location": "South Sioux City, Nebraska, USA",
+        "coordinates": [-96.4003, 42.4783],
+        "commodities": "Oat"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-96.4003, 42.4783]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Richardson International",
+        "name": "Richardson Milling — Melfort Facility",
+        "type": "Facility",
+        "location": "Melfort, Saskatchewan, Canada",
+        "coordinates": [-104.612, 52.7783],
+        "commodities": "Oat"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-104.612, 52.7783]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Richardson International",
+        "name": "Richardson Milling — Oakville Facility",
+        "type": "Facility",
+        "location": "Oakville, Ontario, Canada",
+        "coordinates": [-79.7662, 43.4675],
+        "commodities": "Oat"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.7662, 43.4675]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Grain Millers",
+        "name": "Grain Millers — HQ / Offices",
+        "type": "Headquarters",
+        "location": "Minnetonka, Minnesota, USA",
+        "coordinates": [-93.4773, 44.9389],
+        "commodities": "Oat"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-93.4773, 44.9389]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Grain Millers",
+        "name": "Grain Millers — Winona Facility",
+        "type": "Facility",
+        "location": "Winona, Minnesota, USA",
+        "coordinates": [-91.6465, 44.0481],
+        "commodities": "Oat"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-91.6465, 44.0481]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Grain Millers",
+        "name": "Grain Millers — Marshall Facility",
+        "type": "Facility",
+        "location": "Marshall, Minnesota, USA",
+        "coordinates": [-95.785, 44.4472],
+        "commodities": "Oat"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-95.785, 44.4472]
+      }
+    }
+  ]
+}
