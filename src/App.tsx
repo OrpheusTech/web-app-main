@@ -18,6 +18,7 @@ import Terminal from "./pages/Terminal";
 import Economics from "./pages/Economics";
 import Food from "./pages/Food"
 import Career_old from "./pages/Career_old";
+import Industrials from "./pages/Industrials";
 
 const queryClient = new QueryClient();
 
@@ -46,6 +47,7 @@ const App = () => (
           <Route path="/economics" element={<Economics />}/>
           <Route path="/food" element={<Food />}/>
           <Route path="/careers_old" element={<Career_old />}/>
+          <Route path="/industrials" element={<Industrials />}/>
         </Routes>
       </BrowserRouter>
     </TooltipProvider>

@@ -63,7 +63,7 @@ const Manifesto = () => {
             {/* </FadeInSubtle> */}
           </div>
           {/* Privacy and Transparency */}
-          <div className="prose prose-invert max-w-none mb-12 break-all">
+          <div className="prose prose-invert max-w-none mb-12">
             <h2 className="text-lg md:text-3xl font-bold mb-6">
               Privacy and Transparency
             </h2>
