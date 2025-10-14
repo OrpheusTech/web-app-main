@@ -38,12 +38,12 @@ const Team = () => {
       social: { linkedin: "#", twitter: "#", email: "" },
     },
     {
-      name: "Gagan Gupta",
+      name: "Sriram Nallan",
       role: "AI Software Engineer",
-      bio: "Gagan Gupta is an AI software engineer and a founding team member at OrpheusAI. He holds a B.Tech in Computer Science from PES University, Bengaluru. Prior to joining OrpheusAI, he co-founded EduPrepAI, an AI-powered learning platform that received grant support from Meta and AMD, and served as founding engineer at MedMitra AI, a healthcare AI startup that raised $350K in angel investment. He is also a 5-time national hackathon winner and holds a patent in multimodal health AI research.",
+      bio: "Sriram Nallan is a Computer Science Major from University of Maryland, College Park",
       image: "",
       social: {
-        linkedin: "https://www.linkedin.com/in/thisisgagangupta/",
+        linkedin: "https://www.linkedin.com/in/sriram-nallan-chakravartula-3451b3291/",
         twitter: "#",
         email: "",
       },

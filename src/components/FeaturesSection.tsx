@@ -60,17 +60,29 @@ const features = [
 const FeaturesSection = () => {
   return (
     <section id="scroll-target-section" className="py-24 bg-card to-muted/20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
-        <div className="text-center">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent quicksand-font">
-            Revitalize Your
-            <span className="block text-primary">Farm</span>
-          </h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Transform your agricultural operations with cutting-edge AI technology designed specifically for modern farming challenges.
-          </p>
-        </div>
+      <div className="w-fit max-w-4xl mx-auto px-10 sm:px-20">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent quicksand-font">
+          Own Your Supply Chain
+        </h1>
+        <hr className="border-t border-muted-foreground my-6" />
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent quicksand-font">
+          Own Your Land
+        </h1>
+        <hr className="border-t border-muted-foreground my-6" />
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent quicksand-font">
+          Encrypt Your Network
+        </h1>
+        <hr className="border-t border-muted-foreground my-6" />
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent quicksand-font">
+          Understand the Earth
+        </h1>
+        <hr className="border-t border-muted-foreground my-6" />
+        <p className="text-xl text-muted-foreground leading-relaxed mb-4 mt-8">
+          Our Platform traces every food item back to its source.
+        </p>
+        <p className="text-xl text-muted-foreground leading-relaxed">
+          We Create a Network for Pro American Industrialists and Farmers by offering users access to AI powered tracking of Global Food Supplies and Commodity Markets
+        </p>
 
         {/* Features Grid */}
         {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">

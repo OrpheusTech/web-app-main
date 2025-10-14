@@ -97,7 +97,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="#"
+                  to="/industrials"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
                   Industrials
