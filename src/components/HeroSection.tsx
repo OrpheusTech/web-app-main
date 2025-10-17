@@ -1,6 +1,5 @@
 
-import { Button } from '@/components/ui/button';
-import { ArrowRight, Cpu, Leaf, TrendingUp } from 'lucide-react';
+import video from "../assets/background_video.mp4";
 import { useEffect, useState } from 'react';
 
 const phrases = [
@@ -54,7 +53,7 @@ const    HeroSection = () => {
         playsInline
         className="absolute inset-0 w-full h-full object-cover"
       >
-        <source src="https://orpheustech.github.io/web-app-main/background_video.mp4" type="video/mp4" />
+        <source src={video} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 

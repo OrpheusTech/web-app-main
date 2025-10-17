@@ -1,95 +1,91 @@
+import { Button } from '@/components/ui/button';
+import { FadeInFromDown, TypingIn, AnimatedLine } from '@/components/ui/fade-in';
+import orpheusImg from "../assets/soil-tech.png";
+import enotriumImg from "../assets/supply-chain-bg.png";
 
-import { Card, CardContent } from '@/components/ui/card';
-import { Link } from 'react-router-dom'
-import { ArrowRight, MapPin, Activity, Zap } from 'lucide-react';
 
 const ValueProposition = () => {
   return (
-    <section id="scroll-target-section" className="py-16 bg-gradient-to-br from-background to-muted/20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Content */}
+    <section id="scroll-target-section" className="py-24 bg-gradient-to-br from-background to-muted/20">
+      <div className="w-[90%] max-w-[100rem] mx-auto px-4 sm:px-6 lg:px-8 space-y-12 lg:space-y-24">
+        <div className="flex justify-between">
+          <TypingIn>
+            <h1 className="quicksand-font text-5xl lg:text-[6rem]">
+              Platforms
+            </h1>
+          </TypingIn>
+          <FadeInFromDown delay={750}>
+            <h2 className="text-4xl text-muted-foreground"></h2>
+          </FadeInFromDown>
+        </div>
+
+        <AnimatedLine color="muted-foreground" height="1px" width="100%" delay={0} duration={500}/>
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-[9vw]">
+          <div className="relative w-full h-[12rem] lg:h-[24rem]">
+            <img src={orpheusImg} className="absolute inset-0 w-full h-full object-cover block" />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/70" />
+            <h2 className="absolute inset-0 flex items-center justify-center text-5xl lg:text-6xl z-10 text-white">
+              OrpheusAI
+            </h2>
+          </div>
+
           <div className="space-y-8">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Regenerate Land. Turn a Profit.
-              </h2>
-              <div>
-                <p className="text-muted-foreground mb-4">
-                  We transform polluted soil into clean, fertile land with the power of AI and precision soil mapping. Bio-based remediation techniques generate high-quality industrial materials, enriching farmers as they enrich their land. The result? Clean food, thriving farmers, and healthy Americans.
+            <FadeInFromDown delay={750}>
+              <h2 className="text-4xl text-foreground">Soil Modeling Solutions</h2>
+            </FadeInFromDown>
+            
+            <div className="flex gap-4 items-end flex-col lg:flex-row lg:items-start">
+              <FadeInFromDown delay={1000}>
+                <p className="text-muted-foreground">
+                  Introducing OrpheusAI, a revolutionary AI soil modeling platform. Resurrect your soil and optimize operations, transforming agricultural productivity with data-driven insights.
                 </p>
-                <div className="pt-4">
-                  <Link to="/systems" className="inline-flex items-center text-primary font-medium group">
-                    Learn More About Our Technology
-                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                  </Link>
-                </div>
-              </div>
+              </FadeInFromDown>
+              
+              <FadeInFromDown delay={1250}>
+                <a href="/systems" className="text-right block">
+                  <button className="border border-solid border-foreground p-3 rounded-sm hover:text-primary hover:border-primary transition-colors duration-250 whitespace-nowrap">
+                    Explore OrpheusAI -&gt;
+                  </button>
+                </a>
+              </FadeInFromDown>
             </div>
+            
 
-            {/* Stats Cards */}
-            {/*
-            <div className="grid grid-cols-3 gap-4">
-              <Card className="bg-primary/10 border-primary/20">
-                <CardContent className="p-4 text-center">
-                  <div className="text-2xl font-bold text-primary">8,865</div>
-                  <div className="text-xs text-muted-foreground">Contaminated Sites</div>
-                </CardContent>
-              </Card>
-              <Card className="bg-primary/10 border-primary/20">
-                <CardContent className="p-4 text-center">
-                  <div className="text-2xl font-bold text-primary">50</div>
-                  <div className="text-xs text-muted-foreground">States Affected</div>
-                </CardContent>
-              </Card>
-              <Card className="bg-primary/10 border-primary/20">
-                <CardContent className="p-4 text-center">
-                  <div className="text-2xl font-bold text-primary">100%</div>
-                  <div className="text-xs text-muted-foreground">Recovery Rate</div>
-                </CardContent>
-              </Card>
-            </div>
-            */}
+          </div>       
+        </div>
+        <AnimatedLine color="muted-foreground" height="1px" width="100%" delay={0} duration={500}/>
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-[9vw]">
+          <div className="relative w-full h-[12rem] lg:h-[24rem]">
+            <img src={enotriumImg} className="absolute inset-0 w-full h-full object-cover block" />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/70" />
+            <h2 className="absolute inset-0 flex items-center justify-center text-5xl lg:text-6xl z-10 text-white">
+              Enotrium
+            </h2>
           </div>
 
-          {/* Right Content - Features */}
-          <div className="space-y-6">
-            <div className="flex items-start space-x-4">
-              <div className="flex-shrink-0 w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center">
-                <MapPin className="h-6 w-6 text-primary" />
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold mb-2">Precision Soil Mapping</h3>
+          <div className="space-y-8">
+            <FadeInFromDown delay={750}>
+              <h2 className="text-4xl text-foreground">Supply Chain Monitoring Systems</h2>
+            </FadeInFromDown>
+            
+            <div className="flex gap-4 items-end flex-col lg:flex-row lg:items-start">
+              <FadeInFromDown delay={1000}>
                 <p className="text-muted-foreground">
-                  Advanced satellite imagery and drone scans identify toxin hotspots with unprecedented accuracy.
+                  Introducing Enotrium, the advanced supply chain monitoring platform. It provides encrypted tracking of digital assets and real time tracking of supply chain operations and markets.
                 </p>
-              </div>
+              </FadeInFromDown>
+              
+              <FadeInFromDown delay={1250}>
+                <a href="/systems" className="text-right block">
+                  <button className="border border-solid border-foreground p-3 rounded-sm hover:text-primary hover:border-primary transition-colors duration-250 whitespace-nowrap">
+                    Explore Enotrium -&gt;
+                  </button>
+                </a>
+              </FadeInFromDown>
             </div>
 
-            <div className="flex items-start space-x-4">
-              <div className="flex-shrink-0 w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center">
-                <Activity className="h-6 w-6 text-primary" />
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold mb-2">Microbiome Analysis</h3>
-                <p className="text-muted-foreground">
-                  Soil microbiome data reveals the optimal restoration strategy for each field.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-start space-x-4">
-              <div className="flex-shrink-0 w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center">
-                <Zap className="h-6 w-6 text-primary" />
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold mb-2">AI-Powered Recommendations</h3>
-                <p className="text-muted-foreground">
-                  Get precise guidance on what to plant, when to rotate, and which cover crops detoxify specific contaminants.
-                </p>
-              </div>
-            </div>
           </div>
+        
         </div>
       </div>
     </section>

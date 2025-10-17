@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import img from "../assets/industrials.jpg";
 
 
 const Industrials = () => {
@@ -9,7 +10,7 @@ const Industrials = () => {
       {/* Top Content */}
        <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <img
-          src="https://orpheustech.github.io/web-app-main/industrials.jpg"
+          src={img}
           alt="Picture of industrials"
           className="absolute inset-0 w-full h-full object-cover"
         />

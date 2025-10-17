@@ -12,51 +12,6 @@ import {
   CheckCircle
 } from 'lucide-react';
 
-const features = [
-  {
-    icon: Cpu,
-    title: "AI-Powered Analytics",
-    description: "Advanced machine learning algorithms analyze soil composition, weather patterns, and crop health in real-time.",
-    benefits: ["Real-time monitoring", "Predictive insights", "Automated recommendations"],
-    color: "from-blue-500 to-purple-600"
-  },
-  {
-    icon: Leaf,
-    title: "Soil Health Optimization",
-    description: "Comprehensive soil analysis and management recommendations to maximize fertility and sustainability.",
-    benefits: ["Nutrient optimization", "pH balance", "Organic matter enhancement"],
-    color: "from-green-500 to-emerald-600"
-  },
-  {
-    icon: TrendingUp,
-    title: "Yield Optimization",
-    description: "Data-driven strategies to increase crop yields while reducing resource consumption and environmental impact.",
-    benefits: ["25% yield increase", "30% resource savings", "ROI tracking"],
-    color: "from-amber-500 to-orange-600"
-  },
-  {
-    icon: Shield,
-    title: "Environmental Protection",
-    description: "Sustainable farming practices that protect ecosystems while maintaining high productivity levels.",
-    benefits: ["Carbon footprint reduction", "Water conservation", "Biodiversity protection"],
-    color: "from-cyan-500 to-blue-600"
-  },
-  {
-    icon: Zap,
-    title: "Rapid Implementation",
-    description: "Quick deployment with minimal disruption to existing operations and immediate actionable insights.",
-    benefits: ["24-hour setup", "No downtime", "Instant results"],
-    color: "from-purple-500 to-pink-600"
-  },
-  {
-    icon: Users,
-    title: "Expert Support",
-    description: "24/7 support from agricultural experts and data scientists to ensure optimal system performance.",
-    benefits: ["24/7 availability", "Expert consultation", "Training included"],
-    color: "from-indigo-500 to-purple-600"
-  }
-];
-
 const FeaturesSection = () => {
   return (
     <section id="scroll-target-section" className="py-24 bg-card to-muted/20">
