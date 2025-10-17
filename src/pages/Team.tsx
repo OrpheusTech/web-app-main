@@ -127,7 +127,6 @@ const Team = () => {
       {/* Team Members */}
       <section className="py-12 mb-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex-col justify-center">
-          <h2 className="text-3xl font-bold text-center mb-12">Core Team</h2>
           <Masonry
             breakpointCols={breakpointColumns}
             className="flex gap-6 justify-center"
