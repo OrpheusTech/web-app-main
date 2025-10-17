@@ -4,7 +4,7 @@ import './index.css'
 
 // Initialize theme before React renders
 const initializeTheme = () => {
-  const savedTheme = localStorage.getItem('theme') as 'light' | 'dark' | 'system' || 'system'
+  const savedTheme = localStorage.getItem('theme') as 'light' | 'dark' | 'system' || 'dark'
   
   let actualTheme: 'light' | 'dark' = 'dark'
   
