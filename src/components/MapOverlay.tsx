@@ -91,8 +91,8 @@ export default function MapOverlay() {
     });
 
 		async function loadImages(map) {
-			map.addImage('building-icon', (await map.loadImage('https://orpheustech.github.io/web-app-main/building-icon.png')).data);
-			map.addImage('house-icon', (await map.loadImage('https://orpheustech.github.io/web-app-main/house-icon.png')).data);
+			map.addImage('building-icon', (await map.loadImage('/building-icon.png')).data);
+			map.addImage('house-icon', (await map.loadImage('/house-icon.png')).data);
 		}
 		
 		loadImages(map);
@@ -112,52 +112,52 @@ export default function MapOverlay() {
 			Soybean: {
 				id: "soybean-layer",
 				sourceId: "soybean-source",
-				data: "https://orpheustech.github.io/web-app-main/geojson/soybean.geojson",
+				data: "/geojson/soybean.geojson",
 			},
 			Corn: {
 				id: "corn-layer",
 				sourceId: "corn-source",
-				data: "https://orpheustech.github.io/web-app-main/geojson/soybean.geojson",
+				data: "/geojson/soybean.geojson",
 			},
 			Wheat: {
 				id: "wheat-layer",
 				sourceId: "wheat-source",
-				data: "https://orpheustech.github.io/web-app-main/geojson/soybean.geojson",
+				data: "/geojson/soybean.geojson",
 			},
 			Lumber: {
 				id: "lumber-layer",
 				sourceId: "lumber-source",
-				data: "https://orpheustech.github.io/web-app-main/geojson/lumber.geojson",
+				data: "/geojson/lumber.geojson",
 			},
 			Cotton: {
 				id: "cotton-layer",
 				sourceId: "cotton-source",
-				data: "https://orpheustech.github.io/web-app-main/geojson/cotton.geojson",
+				data: "/geojson/cotton.geojson",
 			},
 			Canola: {
 				id: "canola-layer",
 				sourceId: "canola-source",
-				data: "https://orpheustech.github.io/web-app-main/geojson/canola.geojson",
+				data: "/geojson/canola.geojson",
 			},
 			Oat: {
 				id: "oat-layer",
 				sourceId: "oat-source",
-				data: "https://orpheustech.github.io/web-app-main/geojson/oat.geojson",
+				data: "/geojson/oat.geojson",
 			},
 			SunflowerOil: {
 				id: "sunflower-oil-layer",
 				sourceId: "sunflower-oil-source",
-				data: "https://orpheustech.github.io/web-app-main/geojson/sunflower-oil.geojson",
+				data: "/geojson/sunflower-oil.geojson",
 			},
 			Hemp: {
 				id: "hemp-layer",
 				sourceId: "hemp-source",
-				data: "https://orpheustech.github.io/web-app-main/geojson/hemp.geojson",
+				data: "/geojson/hemp.geojson",
 			},
 			Cocoa: {
 				id: "cocoa-layer",
 				sourceId: "cocoa-source",
-				data: "https://orpheustech.github.io/web-app-main/geojson/cocoa.geojson",
+				data: "/geojson/cocoa.geojson",
 			},
 		};
 

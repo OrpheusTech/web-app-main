@@ -22,8 +22,8 @@ import Industrials from "./pages/Industrials";
 
 const queryClient = new QueryClient();
 
-// Get the base path for GitHub Pages deployment
-const basename = import.meta.env.PROD ? '/web-app-main' : '';
+// No base path needed for Vercel deployment
+const basename = '';
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
