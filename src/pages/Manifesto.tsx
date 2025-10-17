@@ -7,19 +7,16 @@ import { Camera, BrainCircuit, Zap } from "lucide-react";
 const Manifesto = () => {
   const principles = [
     {
-      icon: Camera,
       title: "Hyperspectral Sensors",
       description:
         "Hyperspectral sensors can identify microbial discrepancies and detect unusual growth patterns often times before a seed germinates.",
     },
     {
-      icon: BrainCircuit,
       title: "Artificial Intelligence",
       description:
         "Orpheus’ Artificial Intelligence Platform is trained to monitor real time data and pinpoint anomalies in molecular activity early.",
     },
     {
-      icon: Zap,
       title: "Power",
       description:
         " Farmers know when something’s off, Orpheus will make that intuition precise and create the new digital architecture that restores power to American farms.",
@@ -32,7 +29,6 @@ const Manifesto = () => {
       {/* Top Content */}
       <section className="pt-24 pb-12 bg-gradient-to-br from-background to-card">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <Badge className="mb-4">About</Badge>
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             The Agrarian Republic:<br></br>
             <span className="text-primary">A Manifesto</span>
@@ -152,9 +148,6 @@ const Manifesto = () => {
                 <Card key={index} className="flex flex-col h-full text-left">
                   <CardContent className="flex flex-col flex-grow p-6">
                     <div className="flex items-center gap-4">
-                      <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center shrink-0 justify-center mb-4">
-                        <principle.icon className="h-8 w-8 text-primary" />
-                      </div>
                       <h3 className="text-xl font-semibold break-words mb-3">
                         {principle.title}
                       </h3>
