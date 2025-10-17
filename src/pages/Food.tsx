@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import img from "../assets/food.jpg";
 
 
 const Food = () => {
@@ -9,7 +10,7 @@ const Food = () => {
       {/* Top Content */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <img
-          src="https://orpheustech.github.io/web-app-main/food.JPG"
+          src={img}
           alt="Picture of food"
           className="absolute inset-0 w-full h-full object-cover"
         />

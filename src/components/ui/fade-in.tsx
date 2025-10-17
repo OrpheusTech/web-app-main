@@ -3,20 +3,24 @@ import { useEffect, useRef, useState } from 'react';
 /* Use on text to give a typing animation */
 export const TypingIn = ({ children }: { children: React.ReactNode }) => {
   const ref = useRef<HTMLDivElement>(null);
-  const [isVisible, setIsVisible] = useState(false);
+  const [hasAnimated, setHasAnimated] = useState(false);
 
   useEffect(() => {
+    const element = ref.current;
+    if (!element) return;
+
     const observer = new IntersectionObserver(
-      ([entry]) => setIsVisible(entry.isIntersecting),
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setHasAnimated(true);
+          observer.unobserve(entry.target); // 👈 stop observing after first trigger
+        }
+      },
       { threshold: 0.1 }
     );
 
-    const current = ref.current;
-    if (current) observer.observe(current);
-
-    return () => {
-      if (current) observer.unobserve(current);
-    };
+    observer.observe(element);
+    return () => observer.disconnect();
   }, []);
 
   const animation = `typing 2000ms steps(30, end) forwards`;
@@ -25,9 +29,9 @@ export const TypingIn = ({ children }: { children: React.ReactNode }) => {
     <div
       ref={ref}
       className={`typing-text ${
-        isVisible ? 'opacity-100' : `opacity-0`
+        hasAnimated ? "opacity-100" : "opacity-0"
       }`}
-      style={isVisible ? { transitionDelay: '250ms', animation } : {}}
+      style={hasAnimated ? { animation, transitionDelay: "250ms" } : {}}
     >
       {children}
     </div>
@@ -35,36 +39,44 @@ export const TypingIn = ({ children }: { children: React.ReactNode }) => {
 };
 
 
-interface FadeInFromUpStaggerProps {
-  className: string;
+
+interface FadeInFromDownProps {
+  className?: string;
   children: React.ReactNode;
-  delay?: number; // in milliseconds
+  delay?: number;
 }
 
-/* Fades in elements from above and can stagger multiple elements at a time to give a cascading effect */
-export const FadeInFromUpStagger = ({ className, children, delay = 0 }: FadeInFromUpStaggerProps) => {
+export const FadeInFromDown = ({
+  className = "",
+  children,
+  delay = 0,
+}: FadeInFromDownProps) => {
   const ref = useRef<HTMLDivElement>(null);
-  const [isVisible, setIsVisible] = useState(false);
+  const [hasFadedIn, setHasFadedIn] = useState(false);
 
   useEffect(() => {
+    const element = ref.current;
+    if (!element) return;
+
     const observer = new IntersectionObserver(
-      ([entry]) => setIsVisible(entry.isIntersecting),
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setHasFadedIn(true);
+          observer.unobserve(entry.target);
+        }
+      },
       { threshold: 0.1 }
     );
 
-    const current = ref.current;
-    if (current) observer.observe(current);
-
-    return () => {
-      if (current) observer.unobserve(current);
-    };
+    observer.observe(element);
+    return () => observer.disconnect();
   }, []);
 
   return (
     <div
       ref={ref}
-      className={`transition-all duration-1000 ease-in-out delay-250 transform ${className} ${
-        isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-y-20'
+      className={`transition-all duration-500 ease transform ${className} ${
+        hasFadedIn ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
       }`}
       style={{ transitionDelay: `${delay}ms` }}
     >
@@ -73,34 +85,52 @@ export const FadeInFromUpStagger = ({ className, children, delay = 0 }: FadeInFr
   );
 };
 
-/* Fades in elements after a small delay when the user scrolls over them */
-export const FadeInSubtle = ({ children }: { children: React.ReactNode }) => {
+
+export const AnimatedLine = ({
+  width = "100%",
+  height = "2px",
+  color = "white",
+  delay = 0,
+  duration = 1000,
+}: {
+  width?: string;
+  height?: string;
+  color?: string;
+  delay?: number;
+  duration?: number;
+}) => {
   const ref = useRef<HTMLDivElement>(null);
-  const [isVisible, setIsVisible] = useState(false);
+  const [hasAnimated, setHasAnimated] = useState(false);
 
   useEffect(() => {
+    const element = ref.current;
+    if (!element) return;
+
     const observer = new IntersectionObserver(
-      ([entry]) => setIsVisible(entry.isIntersecting),
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setHasAnimated(true);
+          observer.unobserve(entry.target);
+        }
+      },
       { threshold: 0.1 }
     );
 
-    const current = ref.current;
-    if (current) observer.observe(current);
-
-    return () => {
-      if (current) observer.unobserve(current);
-    };
+    observer.observe(element);
+    return () => observer.disconnect();
   }, []);
 
   return (
     <div
       ref={ref}
-      className={`transition-opacity duration-1000 ease-out ${
-        isVisible ? 'opacity-100' : 'opacity-0'
-      }`}
-      style={{ transitionDelay: '500ms' }}
-    >
-      {children}
-    </div>
+      style={{
+        width,
+        height,
+        backgroundColor: `hsl(var(--${color}))`,
+        transformOrigin: "left center",
+        transform: hasAnimated ? "scaleX(1)" : "scaleX(0)",
+        transition: `transform ${duration}ms ease-out ${delay}ms`,
+      }}
+    />
   );
 };

@@ -107,12 +107,12 @@ const Systems = () => {
 
       {/* Core Systems */}
       <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-center gap-5">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 overflow-x-auto">
+          <div className="flex gap-5">
             {systemFeatures.map((feature, index) => (
               <Card
                 key={index}
-                className="w-[380px] bg-background border-2 border-card flex-auto group hover:shadow-lg transition-all duration-300 border-border/50 hover:border-primary/50"
+                className="w-56 flex-shrink-0 bg-background border-2 border-card group hover:shadow-lg transition-all duration-300 border-border/50 hover:border-primary/50"
               >
                 <CardHeader>
                   <div className="relative w-12 h-12 mb-4 rounded-lg flex items-center justify-center">
@@ -160,7 +160,7 @@ const Systems = () => {
 
           <div className="grid md:grid-cols-5 gap-6">
             {workflow.map((item, index) => (
-              <div key={index} className="text-center">
+              <div key={index} className="text-center relative">
                 <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4 border-2 border-primary/30">
                   <span className="text-xl font-bold text-primary">
                     {item.step}
@@ -171,7 +171,7 @@ const Systems = () => {
                   {item.description}
                 </p>
                 {index < workflow.length - 1 && (
-                  <div className="hidden md:block absolute top-8 left-full w-full h-0.5 bg-primary/30 transform translate-x-3"></div>
+                  <div className="hidden md:block absolute top-8 right-[-33%] w-[50%] h-0.5 bg-primary/30 transform"></div>
                 )}
               </div>
             ))}

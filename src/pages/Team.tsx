@@ -20,9 +20,20 @@ const Team = () => {
       },
     },
     {
-      name: "Emanuele Gaz",
+      name: "Tom Follett",
       role: "Chief Technology Officer",
-      bio: "Emanuele Gaz is our CTO and holds a B.S.c in Physics from the University of Trento. He also holds M.S.c in Physics with specialization in Quantum Information and Technologies from the Hebrew University of Jerusalem, and an MBA in Energy and Environmental Management and Economics from the Università di Pavia. ",
+      bio: "Tom Follett holds a B.A. in mathematics from the University of San Diego. Tom resides in the Bay Area, and spends his free time teaching classical guitar lessons.",
+      image: "",
+      social: {
+        linkedin: "https://www.linkedin.com/in/tom-follett-2691aa221/",
+        twitter: "#",
+        email: "",
+      },
+    },
+    {
+      name: "Emanuele Gaz",
+      role: "Chief of Research",
+      bio: "Emanuele Gaz holds a B.S.c in Physics from the University of Trento. He also holds M.S.c in Physics with specialization in Quantum Information and Technologies from the Hebrew University of Jerusalem, and an MBA in Energy and Environmental Management and Economics from the Università di Pavia. ",
       image: "",
       social: {
         linkedin: "https://www.linkedin.com/in/emanuele-gaz-676ba8339/",
@@ -32,7 +43,7 @@ const Team = () => {
     },
     {
       name: "Honovi Trudell",
-      role: "Business Strategy and development",
+      role: "Chief of Operations",
       bio: "Honovi Trudell leads customer strategy. He is a former member of the United States Coast Guard and the Baltimore City Police Department. Mr Trudell has worked for non-profits dedicated to regenerative agriculture and led sustainability projects in rural America.",
       image: "",
       social: { linkedin: "#", twitter: "#", email: "" },
@@ -60,23 +71,23 @@ const Team = () => {
       },
     },
     {
-      name: "Thoyajaksha Kashyap",
-      role: "AI Software Engineer",
-      bio: "Thoyajaksha Kashyap holds an M.S. in Computer Science from the University of South Dakota, where he specialized in AI-driven healthcare and assistive technologies. His work includes developing an AI Smart Stick for the Visually Impaired during a DRDO internship, creating deep learning models for brain tumor and kidney disease detection (both IEEE-published), and building a Pap smear classification system using CNN and Transformers. Beyond healthcare AI, he engineered an NLP KPI Dashboard for gaming analytics and delivers solutions spanning embedded systems, computer vision, NLP, and full-stack development.",
-      image: "",
-      social: {
-        linkedin: "https://www.linkedin.com/in/thoyajaksha-kashyap-kristipati/",
-        twitter: "#",
-        email: "",
-      },
-    },
-    {
       name: "Alessandro Burlando",
       role: "AI Software Engineer",
       bio: "Alessandro Burlando is a computer scientist. He is from Genoa, Italy.",
       image: "",
       social: {
         linkedin: "https://www.linkedin.com/in/alessandro-burlando-52243429b/",
+        twitter: "#",
+        email: "",
+      },
+    },
+    {
+      name: "Thoyajaksha Kashyap",
+      role: "AI Software Engineer",
+      bio: "Thoyajaksha Kashyap holds an M.S. in Computer Science from the University of South Dakota, where he specialized in AI-driven healthcare and assistive technologies. His work includes developing an AI Smart Stick for the Visually Impaired during a DRDO internship, creating deep learning models for brain tumor and kidney disease detection (both IEEE-published), and building a Pap smear classification system using CNN and Transformers. Beyond healthcare AI, he engineered an NLP KPI Dashboard for gaming analytics and delivers solutions spanning embedded systems, computer vision, NLP, and full-stack development.",
+      image: "",
+      social: {
+        linkedin: "https://www.linkedin.com/in/thoyajaksha-kashyap-kristipati/",
         twitter: "#",
         email: "",
       },
@@ -92,17 +103,7 @@ const Team = () => {
         email: "",
       },
     },
-    {
-      name: "Tom Follett",
-      role: "AI Researcher",
-      bio: "Tom Follett holds a B.A. in mathematics from the University of San Diego. Tom resides in the Bay Area, and spends his free time teaching classical guitar lessons.",
-      image: "",
-      social: {
-        linkedin: "https://www.linkedin.com/in/tom-follett-2691aa221/",
-        twitter: "#",
-        email: "",
-      },
-    },
+    
   ];
 
   const breakpointColumns = {
@@ -117,9 +118,8 @@ const Team = () => {
       {/* Hero */}
       <section className="pt-24 pb-12 bg-gradient-to-br from-background to-card">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <Badge className="mb-4">Meet the Team</Badge>
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            The People Behind <span className="text-primary">Orpheus AI</span>
+          <h1 className="text-4xl md:text-6xl quicksand-font my-12">
+            The Team
           </h1>
           <p className="text-xl text-muted-foreground"></p>
         </div>

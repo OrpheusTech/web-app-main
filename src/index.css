@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
 @font-face {
   font-family: "Alliance No2";
   src: url("/fonts/alliance-2-font.otf") format("opentype");
@@ -626,8 +628,8 @@ html, body {
 }
 
 .quicksand-font {
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
+  font-family: "Quicksand", sans-serif;
+  font-weight: lighter;
   font-style: normal;
 }
 
