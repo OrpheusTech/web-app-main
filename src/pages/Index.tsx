@@ -14,7 +14,6 @@ const Index = () => {
       <FeaturesSection />
       <ValueProposition />
       <SupplyChain />
-      <ContaminationData />
       <Footer />
     </div>
   );
