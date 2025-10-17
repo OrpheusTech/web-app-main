@@ -14,12 +14,14 @@ const SupplyChain = () => {
             land valuation. supply-chain analysis and economic modeling.
           </p>
         </div>
+        {/* Add back when we have a private key generation feature
         <div className="text-center">
             <Button className="text-blue-500 text-2xl my-10 md:text-3xl lg:text-4xl hover:bg-card" variant="ghost">Generate Private Keys</Button>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Your Identity is secured. No email or name required Blockchain-based login
           </p>
         </div>
+        */}
       </div>
     </section>
   );
